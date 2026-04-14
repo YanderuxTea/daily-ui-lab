@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UI Lab: Skill Refresher
 
-## Getting Started
+---
 
-First, run the development server:
+### Доступен для заказов. [Мой профиль на Kwork](https://kwork.ru/user/teawithsuqar)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Мой личный полигон для оттачивания навыков фронтенд-разработки. Здесь я буду собирать изолированные UI-компоненты и 
+макеты каждый день.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Цель:** Сохранять "чистоту кода" и скорость верстки на актуальном стеке, пока фокус смещен на другие задачи.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Стек технологий
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Список реализованных модулей
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Glassmorphism Profile Card
+* **Описание:** Минималистичная карточка профиля с эффектом матового стекла и адаптивной сеткой статистики.
+* **Тайминг реализации:** ~45 минут.
+* **Путь:** `/glassmorphism-profile-card`
+<details>
+<summary style="font-weight: bold">Превью</summary>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Preview](/public/glassmorphism-profile-card.gif)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+</details>
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Как запустить
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Клонировать репозиторий:
+   ```bash
+   git clone https://github.com/YanderuxTea/daily-ui-lab.git
+   ```
+2. Перейти в папку
+   ```bash
+   cd daily-ui-lab
+   ```
+   
+3. Установить зависимости
+   ```bash
+   pnpm install
+   ```
+   
+4. Запустить
+   ```bash
+   pnpm dev
+   ```
+   
