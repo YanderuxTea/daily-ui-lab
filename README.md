@@ -39,6 +39,7 @@
 ![Preview](/public/dashboard-activity-widget.gif)
 
 </details>
+
 ---
 ## Посмотреть работы можно по этой [ссылке](https://daily-ui-lab.vercel.app/)
 
