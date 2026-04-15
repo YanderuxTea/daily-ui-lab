@@ -13,7 +13,9 @@ export default function MainPage() {
       <div className={"flex flex-col gap-1 w-full max-w-300"}>
         <p className={"text-lg font-semibold text-neutral-300"}>Проекты:</p>
         <div
-          className={"grid grid-cols-2 text-emerald-400 w-full lg:grid-cols-5"}
+          className={
+            "grid grid-cols-2 text-emerald-400 w-full lg:grid-cols-5 gap-2.5"
+          }
         >
           <Link
             href={"glassmorphism-profile-card"}
@@ -23,6 +25,16 @@ export default function MainPage() {
             }
           >
             Карточка профиля(стекло)
+          </Link>
+          <Link
+            href={"dashboard-activity-widget"}
+            className={
+              "bg-blue-900/10 text-center px-2 py-1 rounded-md border border-blue-900/50 backdrop-blur-md" +
+              " transition-all duration-150 ease-out hover:bg-blue-900/30 hover:border-blue-900/70 hover:scale-102" +
+              " flex items-center justify-center"
+            }
+          >
+            Виджет активности
           </Link>
         </div>
       </div>

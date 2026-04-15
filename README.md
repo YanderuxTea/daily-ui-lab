@@ -29,6 +29,16 @@
 
 </details>
 
+### 2. Interactive Activity Widget
+* **Описание:** Дашборд-виджет с динамическим распределением задач и пружинной анимацией прогресса.
+* **Тайминг реализации:** ~30 минут.
+* **Путь:** `/dashboard-activity-widget`
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/dashboard-activity-widget.gif)
+
+</details>
 ---
 ## Посмотреть работы можно по этой [ссылке](https://daily-ui-lab.vercel.app/)
 
