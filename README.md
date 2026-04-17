@@ -14,6 +14,31 @@
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 * **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
+
+---
+## Посмотреть работы можно по этой [ссылке](https://daily-ui-lab.vercel.app/)
+
+---
+## Как запустить локально
+
+1. Клонировать репозиторий:
+   ```bash
+   git clone https://github.com/YanderuxTea/daily-ui-lab.git
+   ```
+2. Перейти в папку
+   ```bash
+   cd daily-ui-lab
+   ```
+
+3. Установить зависимости
+   ```bash
+   pnpm install
+   ```
+
+4. Запустить
+   ```bash
+   pnpm dev
+   ```
 ---
 
 ## Список реализованных модулей
@@ -40,28 +65,27 @@
 
 </details>
 
----
-## Посмотреть работы можно по этой [ссылке](https://daily-ui-lab.vercel.app/)
+### 3. Command Palette
+* **Описание:** Интеллектуальная панель управления приложением. Позволяет пользователю быстро перемещаться по 
+  разделам и 
+  выполнять 
+экшены, не отрывая рук от клавиатуры.
 
----
-## Как запустить локально
+* **Тайминг реализации:** ~1.5 часа.
+* **Путь:** `/command-palette`
 
-1. Клонировать репозиторий:
-   ```bash
-   git clone https://github.com/YanderuxTea/daily-ui-lab.git
-   ```
-2. Перейти в папку
-   ```bash
-   cd daily-ui-lab
-   ```
-   
-3. Установить зависимости
-   ```bash
-   pnpm install
-   ```
-   
-4. Запустить
-   ```bash
-   pnpm dev
-   ```
+#### Технические фичи:
+* **Global Keyboard Listener:** Вызов палитры через `Ctrl + B` и полная навигация стрелками (`ArrowUp`, `ArrowDown`).
+* **Smart Filter & Grouping:** Динамическая фильтрация данных с сохранением группировки по категориям через `Array.reduce`.
+* **Сквозная индексация:** Реализована логика выбора элементов, которая корректно работает со сгруппированным списком.
+* **UI/UX:** * Эффект "стеклянного морфизма" для оверлея.
+   * Пружинная анимация появления (`Framer Motion Spring`).
+   * Автофокус на `input` при открытии.
+   * Backdrop-blur подложка для концентрации внимания на поиске.
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/command-palette.gif)
+
+</details>
    
