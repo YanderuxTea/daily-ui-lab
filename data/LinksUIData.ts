@@ -15,4 +15,5 @@ export const linksUIData: LinksUIData[] = [
     href: "command-palette",
     title: "Командное меню",
   },
+  { href: "message-card", title: "Карточка сообщения" },
 ];

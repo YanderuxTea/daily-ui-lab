@@ -88,4 +88,15 @@
 ![Preview](/public/command-palette.gif)
 
 </details>
-   
+
+### 4. Message Card
+* **Описание:** Карточка сообщения для чатов и форумов с поддержкой интерактивных действий и микроанимаций. Включает 
+  базовую структуру (аватар, имя, время, текст) и панель действий (лайк, ответ, меню).
+* **Тайминг реализации:** ~30 минут.
+* **Путь:** `/message-card`
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/message-card.gif)
+
+</details>
