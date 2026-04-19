@@ -100,3 +100,17 @@
 ![Preview](/public/message-card.gif)
 
 </details>
+
+### 5. Toast Notification Stack
+
+* **Описание:** Система уведомлений с глобальным контекстом и стеком тостов. Поддерживает 4 типа (success, error, 
+  warning, info), авто-удаление через 4 секунды, паузу по ховеру с сохранением оставшегося времени, ручное закрытие и плавное перестроение стека. Прогресс-бар анимируется через Framer Motion useAnimate, стек - через AnimatePresence mode="popLayout".
+* **Тайминг реализации:** ~1 час 20 минут.
+* **Путь:**  `/toast-notification`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/toast-notification.gif)
+
+</details>

@@ -1,4 +1,4 @@
-import { Geist, Inter, Montserrat } from "next/font/google";
+import { DM_Sans, Geist, Inter, Montserrat } from "next/font/google";
 
 export const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
@@ -10,5 +10,9 @@ export const inter = Inter({
 });
 export const geist = Geist({
   subsets: ["latin", "cyrillic"],
+  weight: "variable",
+});
+export const dm_sans = DM_Sans({
+  subsets: ["latin"],
   weight: "variable",
 });
