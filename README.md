@@ -114,3 +114,16 @@
 ![Preview](/public/toast-notification.gif)
 
 </details>
+
+### 6. Context Menu
+
+* **Описание:** Контекстное меню по правому клику с поддержкой вложенного подменю, умным позиционированием у краёв экрана и анимацией через Framer Motion. Меню рендерится через createPortal в document.body. Позиция вычисляется с помощью requestAnimationFrame после первого рендера для точного замера высоты. Подменю открывается по ховеру с задержкой закрытия 200мс и автоматически выезжает влево если не хватает места справа.
+* **Тайминг реализации:** ~3 часа.
+* **Путь:**  /context-menu
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/context-menu.gif)
+
+</details>
