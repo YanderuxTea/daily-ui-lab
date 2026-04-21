@@ -127,3 +127,15 @@
 ![Preview](/public/context-menu.gif)
 
 </details>
+
+### 7. Animated Tabs
+
+* **Описание:** Компонент вкладок с плавной анимацией индикатора активного таба через layoutId Framer Motion и сменой контента через AnimatePresence mode="wait". Индикатор перемещается между табами с пружинной анимацией, контент появляется с fade + небольшим сдвигом по Y.
+* **Тайминг реализации:** ~20 минут.
+* **Путь:** /animated-tabs
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/animated-tabs.gif)
+</details>
