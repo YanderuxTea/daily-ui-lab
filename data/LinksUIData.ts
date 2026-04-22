@@ -19,4 +19,5 @@ export const linksUIData: LinksUIData[] = [
   { href: "toast-notification", title: "Всплывающие уведомления" },
   { href: "context-menu", title: "Контекстное меню" },
   { href: "animated-tabs", title: "Анимированные вкладки" },
+  { href: "pin-input", title: "Поле PIN" },
 ];
