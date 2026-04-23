@@ -151,3 +151,15 @@
 
 ![Preview](/public/pin-input.gif)
 </details>
+
+### 9. Multi-step Stepper
+
+* **Описание:** Трёхшаговый stepper с анимацией слайда между шагами (направление зависит от Back/Next через direction: 1 | -1), прогресс-трек через useMotionValue + useTransform с animate() для плавного перехода, dot-индикаторы с состояниями idle/active/done. Success-экран реализован без отдельного булева флага — через step === countStep + 1. Данные шагов хранятся в Record<number, StepperData> с прямой индексацией по номеру шага.
+* **Тайминг реализации:** ~1 час.
+* **Путь:** `/multi-step-stepper`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/multi-step-stepper.gif)
+</details>

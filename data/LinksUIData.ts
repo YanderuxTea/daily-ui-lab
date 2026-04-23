@@ -20,4 +20,5 @@ export const linksUIData: LinksUIData[] = [
   { href: "context-menu", title: "Контекстное меню" },
   { href: "animated-tabs", title: "Анимированные вкладки" },
   { href: "pin-input", title: "Поле PIN" },
+  { href: "multi-step-stepper", title: "Степпер/Пошаговая форма регистрации" },
 ];
