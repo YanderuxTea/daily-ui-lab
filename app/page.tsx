@@ -11,7 +11,6 @@ export default function MainPage() {
       <div className={"max-w-7xl mx-auto w-full flex flex-col gap-6"}>
         <MainProvider>
           <SearchBlock />
-
           <ContainerComponents />
         </MainProvider>
       </div>

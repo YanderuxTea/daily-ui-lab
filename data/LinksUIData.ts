@@ -6,7 +6,11 @@ type LinksUIData = {
   devices: Devices[];
   description: string;
   stack: Technology[];
+  createdAt: Date;
 };
+function getValidDate(day: number, month: number, year: number) {
+  return new Date(`${year}-${month}-${day}`);
+}
 export const linksUIData: LinksUIData[] = [
   {
     href: "glassmorphism-profile-card",
@@ -14,6 +18,7 @@ export const linksUIData: LinksUIData[] = [
     devices: ["pc", "mobile"],
     description: "Минималистичная карточка профиля с эффектом матового стекла.",
     stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(14, 4, 2026),
   },
   {
     href: "dashboard-activity-widget",
@@ -22,6 +27,7 @@ export const linksUIData: LinksUIData[] = [
     description:
       "Дашборд-виджет с динамическим распределением задач и пружинной анимацией прогресса.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(16, 4, 2026),
   },
   {
     href: "command-palette",
@@ -29,6 +35,7 @@ export const linksUIData: LinksUIData[] = [
     devices: ["pc"],
     description: "Интеллектуальная панель управления приложением.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(17, 4, 2026),
   },
   {
     href: "message-card",
@@ -37,6 +44,7 @@ export const linksUIData: LinksUIData[] = [
     description:
       "Карточка сообщения для чатов и форумов с поддержкой интерактивных действий и микроанимаций.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(18, 4, 2026),
   },
   {
     href: "toast-notification",
@@ -44,6 +52,7 @@ export const linksUIData: LinksUIData[] = [
     devices: ["pc", "mobile"],
     description: "Система уведомлений с глобальным контекстом и стеком тостов.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(19, 4, 2026),
   },
   {
     href: "context-menu",
@@ -53,6 +62,7 @@ export const linksUIData: LinksUIData[] = [
       "Контекстное меню по правому клику с поддержкой вложенного подменю, умным позиционированием у краёв экрана и" +
       " анимацией.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(20, 4, 2026),
   },
   {
     href: "animated-tabs",
@@ -61,6 +71,7 @@ export const linksUIData: LinksUIData[] = [
     description:
       "Компонент вкладок с плавной анимацией индикатора активного таба.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(21, 4, 2026),
   },
   {
     href: "pin-input",
@@ -69,6 +80,7 @@ export const linksUIData: LinksUIData[] = [
     description:
       "Шестизначный OTP-инпут с автофокусом, навигацией стрелками, Backspace-логикой и поддержкой вставки строки ровно из 6 цифр.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(22, 4, 2026),
   },
   {
     href: "multi-step-stepper",
@@ -77,5 +89,6 @@ export const linksUIData: LinksUIData[] = [
     description:
       "Трёхшаговый stepper с анимацией слайда между шагами, прогресс-трек, dot-индикаторы с состояниями.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(23, 4, 2026),
   },
 ];

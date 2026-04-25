@@ -1,10 +1,18 @@
 "use client";
 import useMainContext from "@/components/main/useMainContext";
-import { LayoutGrid, Monitor, Search, Smartphone } from "lucide-react";
+import {
+  ClockArrowDown,
+  ClockArrowUp,
+  LayoutGrid,
+  Monitor,
+  Search,
+  Smartphone,
+} from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function SearchBlock() {
-  const { setQuery, query, filter, setFilter } = useMainContext();
+  const { setQuery, query, filter, setFilter, setSort, sort } =
+    useMainContext();
   return (
     <div
       className={
@@ -27,62 +35,81 @@ export default function SearchBlock() {
           }
         />
       </div>
-      <div
-        className={
-          "text-slate-400 flex flex-row w-full justify-between p-1 border border-slate-800 rounded-xl" +
-          " bg-slate-900/80 font-medium text-sm items-center md:max-w-max"
-        }
-      >
-        <AnimatePresence>
-          <button
-            onClick={() => setFilter(["pc", "mobile"])}
-            key={"button-all"}
-            className={`flex flex-row gap-3 px-4 py-1.5 items-center relative cursor-pointer transition-colors ${filter.length === 2 ? "text-slate-950" : "hover:text-slate-200"}`}
-          >
-            {filter.length === 2 && (
-              <motion.div
-                key={"all-bg"}
-                layoutId={"bg-button"}
-                className={"absolute inset-0 bg-emerald-500 rounded-lg"}
-              ></motion.div>
-            )}
-            <span className={"items-center relative z-10 flex flex-row gap-3"}>
-              <LayoutGrid size={16} /> <span>Все</span>
-            </span>
-          </button>
-          <button
-            onClick={() => setFilter(["pc"])}
-            key={"button-pc"}
-            className={`px-4 py-1.5 items-center relative cursor-pointer transition-colors ${filter.length === 1 && filter.includes("pc") ? "text-slate-950" : "hover:text-slate-200"}`}
-          >
-            {filter.length === 1 && filter.includes("pc") && (
-              <motion.div
-                key={"pc-bg"}
-                layoutId={"bg-button"}
-                className={"absolute inset-0 bg-emerald-500 rounded-lg"}
-              ></motion.div>
-            )}
-            <span className={"items-center relative z-10 flex flex-row gap-3"}>
-              <Monitor size={16} /> <span>PC</span>
-            </span>
-          </button>
-          <button
-            onClick={() => setFilter(["mobile"])}
-            key={"button-mobile"}
-            className={`flex flex-row gap-3 px-4 py-1.5 items-center relative cursor-pointer transition-colors ${filter.length === 1 && filter.includes("mobile") ? "text-slate-950" : "hover:text-slate-200"}`}
-          >
-            {filter.length === 1 && filter.includes("mobile") && (
-              <motion.div
-                key={"mobile-bg"}
-                layoutId={"bg-button"}
-                className={"absolute inset-0 bg-emerald-500 rounded-lg"}
-              ></motion.div>
-            )}
-            <span className={"items-center relative z-10 flex flex-row gap-3"}>
-              <Smartphone size={16} /> <span>Mobile</span>
-            </span>
-          </button>
-        </AnimatePresence>
+      <div className={"flex flex-row items-stretch gap-3 w-full md:max-w-max"}>
+        <div
+          className={
+            "text-slate-400 flex flex-row w-full justify-between p-1 border border-slate-800 rounded-xl" +
+            " bg-slate-900/80 font-medium text-sm items-center md:max-w-max"
+          }
+        >
+          <AnimatePresence>
+            <button
+              onClick={() => setFilter(["pc", "mobile"])}
+              key={"button-all"}
+              className={`flex flex-row gap-3 px-4 py-1.5 items-center relative cursor-pointer transition-colors ${filter.length === 2 ? "text-slate-950" : "hover:text-slate-200"}`}
+            >
+              {filter.length === 2 && (
+                <motion.div
+                  key={"all-bg"}
+                  layoutId={"bg-button"}
+                  className={"absolute inset-0 bg-emerald-500 rounded-lg"}
+                ></motion.div>
+              )}
+              <span
+                className={"items-center relative z-10 flex flex-row gap-3"}
+              >
+                <LayoutGrid size={16} /> <span>Все</span>
+              </span>
+            </button>
+            <button
+              onClick={() => setFilter(["pc"])}
+              key={"button-pc"}
+              className={`px-4 py-1.5 items-center relative cursor-pointer transition-colors ${filter.length === 1 && filter.includes("pc") ? "text-slate-950" : "hover:text-slate-200"}`}
+            >
+              {filter.length === 1 && filter.includes("pc") && (
+                <motion.div
+                  key={"pc-bg"}
+                  layoutId={"bg-button"}
+                  className={"absolute inset-0 bg-emerald-500 rounded-lg"}
+                ></motion.div>
+              )}
+              <span
+                className={"items-center relative z-10 flex flex-row gap-3"}
+              >
+                <Monitor size={16} /> <span>PC</span>
+              </span>
+            </button>
+            <button
+              onClick={() => setFilter(["mobile"])}
+              key={"button-mobile"}
+              className={`flex flex-row gap-3 px-4 py-1.5 items-center relative cursor-pointer transition-colors ${filter.length === 1 && filter.includes("mobile") ? "text-slate-950" : "hover:text-slate-200"}`}
+            >
+              {filter.length === 1 && filter.includes("mobile") && (
+                <motion.div
+                  key={"mobile-bg"}
+                  layoutId={"bg-button"}
+                  className={"absolute inset-0 bg-emerald-500 rounded-lg"}
+                ></motion.div>
+              )}
+              <span
+                className={"items-center relative z-10 flex flex-row gap-3"}
+              >
+                <Smartphone size={16} /> <span>Mobile</span>
+              </span>
+            </button>
+          </AnimatePresence>
+        </div>
+        <button
+          onClick={() =>
+            setSort((prevState) => (prevState === "desc" ? "asc" : "desc"))
+          }
+          className={
+            "shrink-0 w-10.5 aspect-square border rounded-xl text-slate-400 border-slate-800" +
+            " bg-slate-900/80 cursor-pointer transition-colors hover:text-slate-200 flex items-center justify-center"
+          }
+        >
+          {sort === "desc" ? <ClockArrowDown /> : <ClockArrowUp />}
+        </button>
       </div>
     </div>
   );
