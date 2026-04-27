@@ -91,4 +91,13 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(23, 4, 2026),
   },
+  {
+    href: "notification-center",
+    title: "Центр уведомлений",
+    devices: ["pc", "mobile"],
+    description:
+      "Компактный и высокоинтерактивный центр уведомлений, выполненный в глубокой темной палитре.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(27, 4, 2026),
+  },
 ];

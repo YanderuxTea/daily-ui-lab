@@ -163,3 +163,15 @@
 
 ![Preview](/public/multi-step-stepper.gif)
 </details>
+
+### 10. Notification Center Popover
+
+* **Описание:** Попап-центр уведомлений с глобальным стейтом через `useState` + `useMemo`. Фильтрация `all / unread` реализована без дублирования данных — через `useMemo` от одного массива. Анимация открытия/закрытия через `AnimatePresence` + `motion.div` со spring-переходом (`stiffness: 320, damping: 24`), закрытие через `mousedown`-listener на `document` с проверкой `.contains()` по двум рефам (кнопка + попап). Попап рендерится через `createPortal` в контейнер панели. Индикатор активной вкладки анимирован через `layoutId` Framer Motion. Карточки уведомлений появляются со stagger `0.04s` через `delay: index * 0.04`. Иконки и цвета маппятся через `Record<NotificationCenterType, ...>` с прямой индексацией по типу.
+* **Тайминг реализации:** ~1 час.
+* **Путь:** `/notification-center`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/notification-center.gif)
+</details>
