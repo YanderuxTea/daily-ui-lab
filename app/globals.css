@@ -30,3 +30,30 @@
     --color-nc-info-icon: #818CF8;
     --color-nc-error-icon: #F87171;
 }
+@theme {
+    --color-dz-bg: #0C0C0E;
+    --color-dz-surface: #111115;
+    --color-dz-surface-alt: #18181D;
+    --color-dz-surface-drag: #15141F;
+    --color-dz-surface-error: #180F0F;
+    --color-dz-surface-success: #0E1A0E;
+
+    --color-dz-border: #222228;
+    --color-dz-border-light: #28282F;
+    --color-dz-border-dashed: #2A2A35;
+    --color-dz-progress-track: #1E1E24;
+
+    --color-dz-text-primary: #EBEBF5;
+    --color-dz-text-muted: #55555F;
+    --color-dz-text-dim: #45454F;
+    --color-dz-text-time: #3A3A45;
+
+    --color-dz-accent: #6C63FF;
+    --color-dz-success: #4ADE80;
+    --color-dz-error: #F87171;
+    --color-dz-info: #818CF8;
+
+    --color-dz-success-bg: #18201A;
+    --color-dz-error-bg: #281616;
+    --color-dz-info-bg: #161628;
+}

@@ -100,4 +100,13 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(27, 4, 2026),
   },
+  {
+    href: "file-upload-dropzone",
+    title: "Зона загрузки файлов",
+    devices: ["pc", "mobile"],
+    description:
+      "Интерактивная drop-зона загрузки файлов с анимированными состояниями, прогресс-баром и тёмной палитрой.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(28, 4, 2026),
+  },
 ];

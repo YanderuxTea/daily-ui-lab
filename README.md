@@ -175,3 +175,15 @@
 
 ![Preview](/public/notification-center.gif)
 </details>
+
+### 10. File Upload Dropzone
+
+* **Описание:** Зона загрузки файлов с drag-and-drop, валидацией по размеру (10 MB) и анимированным прогрессом. Стейт вынесен в `DropzoneFullBlock` и передаётся вниз через `setFilesAction`. Контейнер дропзоны реагирует на статус (`success` / `error` / `none`) сменой border и background через Tailwind-классы; статус автоматически сбрасывается через `setTimeout` в `useRef` с очисткой через `clearTimeout` при каждом новом изменении. Scale-анимация при drag-over реализована через `motion.div` со spring (`stiffness: 300, damping: 22`). Список файлов рендерится через `AnimatePresence mode="popLayout"` — удаление карточки анимировано через `exit` (`opacity`, `x`, `height → 0`). Прогресс-бар в карточке реализован через `motion.div` с `initial width: 0 → animate width: 100%` и `onAnimationComplete` для переключения в `completed`-стейт — после чего fill меняет цвет с accent на success и появляется иконка чекмарка. Маппинг иконок и цветов по типу файла — через `Record<TypeFile, ...>` с прямой индексацией.
+* **Тайминг реализации:** ~1.5 часа.
+* **Путь:** `/file-upload-dropzone`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/file-upload-dropzone.gif)
+</details>
