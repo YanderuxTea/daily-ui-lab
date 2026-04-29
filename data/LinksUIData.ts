@@ -109,4 +109,13 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(28, 4, 2026),
   },
+  {
+    href: "accordion",
+    title: "Аккордеон",
+    devices: ["pc", "mobile"],
+    description:
+      "FAQ-аккордеон с single‑open логикой и плавной анимацией раскрытия.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(29, 4, 2026),
+  },
 ];

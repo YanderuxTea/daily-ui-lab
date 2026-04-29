@@ -176,7 +176,7 @@
 ![Preview](/public/notification-center.gif)
 </details>
 
-### 10. File Upload Dropzone
+### 11. File Upload Dropzone
 
 * **Описание:** Зона загрузки файлов с drag-and-drop, валидацией по размеру (10 MB) и анимированным прогрессом. Стейт вынесен в `DropzoneFullBlock` и передаётся вниз через `setFilesAction`. Контейнер дропзоны реагирует на статус (`success` / `error` / `none`) сменой border и background через Tailwind-классы; статус автоматически сбрасывается через `setTimeout` в `useRef` с очисткой через `clearTimeout` при каждом новом изменении. Scale-анимация при drag-over реализована через `motion.div` со spring (`stiffness: 300, damping: 22`). Список файлов рендерится через `AnimatePresence mode="popLayout"` — удаление карточки анимировано через `exit` (`opacity`, `x`, `height → 0`). Прогресс-бар в карточке реализован через `motion.div` с `initial width: 0 → animate width: 100%` и `onAnimationComplete` для переключения в `completed`-стейт — после чего fill меняет цвет с accent на success и появляется иконка чекмарка. Маппинг иконок и цветов по типу файла — через `Record<TypeFile, ...>` с прямой индексацией.
 * **Тайминг реализации:** ~1.5 часа.
@@ -186,4 +186,17 @@
 <summary style="font-weight: bold">Превью</summary>
 
 ![Preview](/public/file-upload-dropzone.gif)
+</details>
+
+### 12. Accordion
+
+* **Описание:** FAQ-аккордеон с single-open логикой через openId в родителе. Анимация контента - height: 0 → 'auto' 
+  через Framer Motion. Иконка вращается через motion.span animate={{ rotate }}. Активный пункт получает синюю рамку через transition-colors. Весь контейнер обёрнут в <motion.div layout> для плавного пересчёта высоты соседних элементов.
+* **Тайминг реализации:** ~30 минут.
+* **Путь:** `/accordion`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/accordion.gif)
 </details>
