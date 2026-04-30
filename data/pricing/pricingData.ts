@@ -51,7 +51,7 @@ export const pricingData: PricingData[] = [
   },
   {
     id: uuid(),
-    name: "starter",
+    name: "business",
     price: { monthly: 29, yearly: 23 },
     description: "Для больших команд и бизнеса",
     permissions: [
