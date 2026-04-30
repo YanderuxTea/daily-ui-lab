@@ -118,4 +118,13 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(29, 4, 2026),
   },
+  {
+    href: "pricing",
+    title: "Тарифные планы",
+    devices: ["pc", "mobile"],
+    description:
+      "Премиальные карточки тарифов с динамическим переключением периодов оплаты, типографикой Syne и пружинной анимацией смены цен.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(30, 4, 2026),
+  },
 ];

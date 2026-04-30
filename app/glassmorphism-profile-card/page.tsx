@@ -1,6 +1,5 @@
 import Card from "@/components/glassmorphism-profile-card/Card";
 import { inter } from "@/lib/font";
-
 export default function GPCPage() {
   return (
     <main

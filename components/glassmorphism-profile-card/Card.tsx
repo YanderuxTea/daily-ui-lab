@@ -2,14 +2,12 @@ export default function Card() {
   return (
     <div
       className={
-        "p-7.5 text-white bg-white/3 rounded-3xl border border-white/10 w-87.5 flex flex-col text-center" +
-        " transition-transform duration-300 hover:border-white/20 hover:-translate-y-1.25"
+        "p-7.5 text-white bg-white/3 rounded-3xl border border-white/10 w-87.5 flex flex-col text-center transition-transform duration-300 hover:border-white/20 hover:-translate-y-1.25"
       }
     >
       <div
         className={
-          "select-none flex items-center justify-center w-25 aspect-square rounded-full bg-linear-45 from-[#6366f1]" +
-          " to-[#a855f7] text-[40px] mx-auto mb-5"
+          "select-none flex items-center justify-center w-25 aspect-square rounded-full bg-linear-45 from-[#6366f1] to-[#a855f7] text-[40px] mx-auto mb-5"
         }
       >
         👨‍💻
@@ -38,8 +36,7 @@ export default function Card() {
       </div>
       <button
         className={
-          "p-3 font-semibold bg-white transition-opacity duration-200 text-black rounded-xl cursor-pointer" +
-          " hover:opacity-90 text-[13px]"
+          "p-3 font-semibold bg-white transition-opacity duration-200 text-black rounded-xl cursor-pointer hover:opacity-90 text-[13px]"
         }
       >
         Связаться
