@@ -3,8 +3,10 @@ import {
   DM_Sans,
   Geist,
   Inter,
-  Montserrat,
   Manrope,
+  Montserrat,
+  Space_Grotesk,
+  Space_Mono,
   Syne,
 } from "next/font/google";
 
@@ -35,4 +37,12 @@ export const manrope = Manrope({
 export const syne = Syne({
   subsets: ["latin"],
   weight: "variable",
+});
+export const space_grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: "variable",
+});
+export const space_mono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });

@@ -127,4 +127,13 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(30, 4, 2026),
   },
+  {
+    href: "music-player",
+    title: "Музыкальный плейер",
+    devices: ["pc", "mobile"],
+    description:
+      "Простой музыкальный плейер с анимацией воспроизведения, прогресс-баром и контролами.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(1, 5, 2026),
+  },
 ];

@@ -229,3 +229,16 @@
 ![Preview](/public/pricing.gif)
 
 </details>
+
+### 14. Music Player
+
+- **Описание:** Плеер с кастомным логикой таймера и прогресс-баром. Тайм-менеджмент реализован через `useRef` для интервала и синхронизирован с жизненным циклом компонента. Ползунок (Track) управляется через `framer-motion` (`useMotionValue` и `useTransform`), обеспечивая плавный drag-and-drop и мгновенное обновление `currentTime`. Поддерживает режимы перемешивания (Shuffle) и циклического переключения треков. Состояние "лайка" обновляется иммутабельно через `setMusicData` в родителе. Все стили завязаны на Tailwind-переменные с префиксом `mp-`, а типографика использует `Space Grotesk` для интерфейса и `Space Mono` для тайм-кодов.
+- **Тайминг реализации:** ~4 часа.
+- **Путь:** `/music-player`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/music-player.gif)
+
+</details>

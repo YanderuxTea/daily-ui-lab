@@ -105,3 +105,27 @@
 
   --color-pc-divider: rgba(255, 255, 255, 0.06);
 }
+@theme {
+  --color-mp-bg: #09090f;
+  --color-mp-surface: #0e0e18;
+  --color-mp-surface-alt: #141420;
+  --color-mp-surface-hover: #1a1a28;
+
+  --color-mp-border: #1e1e2e;
+  --color-mp-border-light: #252535;
+
+  --color-mp-text-primary: #eeeef8;
+  --color-mp-text-secondary: #9090a8;
+  --color-mp-text-muted: #55555f;
+
+  --color-mp-accent: #7c6aff;
+  --color-mp-accent-glow: #7c6aff26;
+  --color-mp-accent-hover: #6c5aef;
+
+  --color-mp-progress-track: #1e1e30;
+  --color-mp-progress-fill: #7c6aff;
+  --color-mp-progress-thumb: #ffffff;
+
+  --color-mp-like: #ff6b8a;
+  --color-mp-like-bg: #ff6b8a18;
+}
