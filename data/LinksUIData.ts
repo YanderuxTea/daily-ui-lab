@@ -129,10 +129,10 @@ export const linksUIData: LinksUIData[] = [
   },
   {
     href: "music-player",
-    title: "Музыкальный плейер",
+    title: "Музыкальный плеер",
     devices: ["pc", "mobile"],
     description:
-      "Простой музыкальный плейер с анимацией воспроизведения, прогресс-баром и контролами.",
+      "Простой музыкальный плеер с анимацией воспроизведения, прогресс-баром и контролами.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(1, 5, 2026),
   },
