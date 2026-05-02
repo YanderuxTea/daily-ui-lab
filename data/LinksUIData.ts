@@ -136,4 +136,13 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(1, 5, 2026),
   },
+  {
+    href: "tasks-board",
+    title: "Доска задач",
+    devices: ["pc", "mobile"],
+    description:
+      "Трёхколоночная доска задач с drag-and-drop между колонками, добавлением и удалением карточек, тегами, приоритетами и аватарами исполнителей.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(2, 5, 2026),
+  },
 ];

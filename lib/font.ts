@@ -1,10 +1,12 @@
 import {
   DM_Mono,
   DM_Sans,
+  Fira_Code,
   Geist,
   Inter,
   Manrope,
   Montserrat,
+  Onest,
   Space_Grotesk,
   Space_Mono,
   Syne,
@@ -45,4 +47,12 @@ export const space_grotesk = Space_Grotesk({
 export const space_mono = Space_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
+});
+export const onest = Onest({
+  subsets: ["cyrillic", "latin"],
+  weight: "variable",
+});
+export const fira_code = Fira_Code({
+  subsets: ["latin", "cyrillic"],
+  weight: "variable",
 });
