@@ -1,0 +1,122 @@
+import { Reaction } from "@/components/reaction-bar/Message";
+
+export type Emoji = {
+  id: string;
+  emoji: string;
+};
+
+export const emojis: Emoji[] = [
+  { id: "like", emoji: "👍" },
+  { id: "love", emoji: "❤️" },
+  { id: "laugh", emoji: "😂" },
+  { id: "surprised", emoji: "😮" },
+  { id: "celebrate", emoji: "🎉" },
+  { id: "fire", emoji: "🔥" },
+  { id: "hundred", emoji: "💯" },
+  { id: "rocket", emoji: "🚀" },
+  { id: "sparkles", emoji: "✨" },
+  { id: "cool", emoji: "😎" },
+  { id: "eyes", emoji: "👀" },
+  { id: "strong", emoji: "💪" },
+  { id: "thinking", emoji: "🤔" },
+  { id: "sleep", emoji: "😴" },
+  { id: "raise_hands", emoji: "🙌" },
+];
+export const reactions: Reaction[] = [
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  {
+    id: "fire",
+    emoji: "🔥",
+    author: "",
+  },
+  { id: "like", emoji: "👍", author: "" },
+  { id: "like", emoji: "👍", author: "" },
+  { id: "like", emoji: "👍", author: "" },
+  { id: "like", emoji: "👍", author: "" },
+  { id: "like", emoji: "👍", author: "" },
+  { id: "like", emoji: "👍", author: "" },
+  { id: "like", emoji: "👍", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "love", emoji: "❤️", author: "" },
+  { id: "surprised", emoji: "😮", author: "" },
+  { id: "surprised", emoji: "😮", author: "" },
+  { id: "surprised", emoji: "😮", author: "" },
+  { id: "celebrate", emoji: "🎉", author: "" },
+  { id: "celebrate", emoji: "🎉", author: "" },
+  { id: "celebrate", emoji: "🎉", author: "" },
+  { id: "celebrate", emoji: "🎉", author: "" },
+  { id: "celebrate", emoji: "🎉", author: "" },
+];

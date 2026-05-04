@@ -145,4 +145,13 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(2, 5, 2026),
   },
+  {
+    href: "reaction-bar",
+    title: "Панель реакций",
+    devices: ["pc", "mobile"],
+    description:
+      "Панель реакций в стиле Slack/GitHub - эмодзи с каунтером, тогл своей реакции, анимация появления через AnimatePresence и spring-масштаб при нажатии.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(4, 5, 2026),
+  },
 ];

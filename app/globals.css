@@ -159,3 +159,24 @@
 
   --color-kb-drag-over: #6366f130;
 }
+@theme {
+  --color-rb-bg: #0a0908;
+  --color-rb-surface: #111009;
+  --color-rb-surface-alt: #17150f;
+  --color-rb-surface-hover: #1e1b12;
+
+  --color-rb-border: #222018;
+  --color-rb-border-light: #2c2920;
+
+  --color-rb-text-primary: #ede8de;
+  --color-rb-text-secondary: #7a7060;
+  --color-rb-text-muted: #3a3628;
+
+  --color-rb-accent: #d97706;
+  --color-rb-accent-glow: #d9770620;
+  --color-rb-accent-hover: #b45309;
+
+  --color-rb-active-bg: #d9770618;
+  --color-rb-active-border: #d9770640;
+  --color-rb-count: #f59e0b;
+}

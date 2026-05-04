@@ -255,3 +255,18 @@
 ![Preview](/public/tasks-board.gif)
 
 </details>
+
+### 16. Message Reaction Bar
+
+- **Описание:** Динамическая система реакций для сообщений, вдохновленная современными мессенджерами (Telegram/Slack). Главная фишка - плавная анимация счетчиков и появления иконок через framer-motion с использованием layout и popLayout для корректного перемещения элементов в потоке.
+
+- **Тайминг реализации:** ~1.5 часа.
+
+- **Путь:** `/reaction-bar`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/reaction-bar.gif)
+
+</details>
