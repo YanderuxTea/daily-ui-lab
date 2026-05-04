@@ -1,6 +1,10 @@
+import dynamic from "next/dynamic";
+import { ComponentType } from "react";
+
 export type Devices = "pc" | "mobile";
 type Technology = "Next.js" | "Framer" | "Tailwind CSS";
-type LinksUIData = {
+
+type LinkItem = {
   href: string;
   title: string;
   devices: Devices[];
@@ -11,7 +15,7 @@ type LinksUIData = {
 function getValidDate(day: number, month: number, year: number) {
   return new Date(`${year}-${month}-${day}`);
 }
-export const linksUIData: LinksUIData[] = [
+export const linksUIData = [
   {
     href: "glassmorphism-profile-card",
     title: "Карточка профиля(стекло)",
@@ -59,8 +63,7 @@ export const linksUIData: LinksUIData[] = [
     title: "Контекстное меню",
     devices: ["pc"],
     description:
-      "Контекстное меню по правому клику с поддержкой вложенного подменю, умным позиционированием у краёв экрана и" +
-      " анимацией.",
+      "Контекстное меню по правому клику с поддержкой вложенного подменю, умным позиционированием у краёв экрана и анимацией.",
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(20, 4, 2026),
   },
@@ -154,4 +157,106 @@ export const linksUIData: LinksUIData[] = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(4, 5, 2026),
   },
-];
+] as const satisfies readonly LinkItem[];
+export type PageId = (typeof linksUIData)[number]["href"];
+type PageTitle = (typeof linksUIData)[number]["title"];
+type PageDesc = (typeof linksUIData)[number]["description"];
+
+export const dynamicPageMap: Record<
+  PageId,
+  { page: ComponentType; title: PageTitle; description: PageDesc }
+> = {
+  "glassmorphism-profile-card": {
+    page: dynamic(() => import("@/components/glassmorphism-profile-card/page")),
+    title: "Карточка профиля(стекло)",
+    description: "Минималистичная карточка профиля с эффектом матового стекла.",
+  },
+  accordion: {
+    page: dynamic(() => import("@/components/accordion/page")),
+    title: "Аккордеон",
+    description:
+      "FAQ-аккордеон с single‑open логикой и плавной анимацией раскрытия.",
+  },
+  "animated-tabs": {
+    page: dynamic(() => import("@/components/animated-tabs/page")),
+    title: "Анимированные вкладки",
+    description:
+      "Компонент вкладок с плавной анимацией индикатора активного таба.",
+  },
+  "command-palette": {
+    page: dynamic(() => import("@/components/command-palette/page")),
+    title: "Командное меню",
+    description: "Интеллектуальная панель управления приложением.",
+  },
+  "dashboard-activity-widget": {
+    page: dynamic(() => import("@/components/dashboard-activity-widget/page")),
+    title: "Виджет активности",
+    description:
+      "Дашборд-виджет с динамическим распределением задач и пружинной анимацией прогресса.",
+  },
+  "file-upload-dropzone": {
+    page: dynamic(() => import("@/components/file-upload-dropzone/page")),
+    title: "Зона загрузки файлов",
+    description:
+      "Интерактивная drop-зона загрузки файлов с анимированными состояниями, прогресс-баром и тёмной палитрой.",
+  },
+  "message-card": {
+    page: dynamic(() => import("@/components/message-card/page")),
+    title: "Карточка сообщения",
+    description:
+      "Карточка сообщения для чатов и форумов с поддержкой интерактивных действий и микроанимаций.",
+  },
+  "multi-step-stepper": {
+    page: dynamic(() => import("@/components/multi-step-stepper/page")),
+    title: "Степпер/Пошаговая форма регистрации",
+    description:
+      "Трёхшаговый stepper с анимацией слайда между шагами, прогресс-трек, dot-индикаторы с состояниями.",
+  },
+  "music-player": {
+    page: dynamic(() => import("@/components/music-player/page")),
+    title: "Музыкальный плеер",
+    description:
+      "Простой музыкальный плеер с анимацией воспроизведения, прогресс-баром и контролами.",
+  },
+  "notification-center": {
+    page: dynamic(() => import("@/components/notification-center/page")),
+    title: "Центр уведомлений",
+    description:
+      "Компактный и высокоинтерактивный центр уведомлений, выполненный в глубокой темной палитре.",
+  },
+  "pin-input": {
+    page: dynamic(() => import("@/components/pin-input/page")),
+    title: "Поле PIN",
+    description:
+      "Шестизначный OTP-инпут с автофокусом, навигацией стрелками, Backspace-логикой и поддержкой вставки строки ровно из 6 цифр.",
+  },
+  pricing: {
+    page: dynamic(() => import("@/components/pricing/page")),
+    title: "Тарифные планы",
+    description:
+      "Премиальные карточки тарифов с динамическим переключением периодов оплаты, типографикой Syne и пружинной анимацией смены цен.",
+  },
+  "reaction-bar": {
+    page: dynamic(() => import("@/components/reaction-bar/page")),
+    title: "Панель реакций",
+    description:
+      "Панель реакций в стиле Slack/GitHub - эмодзи с каунтером, тогл своей реакции, анимация появления через AnimatePresence и spring-масштаб при нажатии.",
+  },
+  "tasks-board": {
+    page: dynamic(() => import("@/components/tasks-board/page")),
+    title: "Доска задач",
+    description:
+      "Трёхколоночная доска задач с drag-and-drop между колонками, добавлением и удалением карточек, тегами, приоритетами и аватарами исполнителей.",
+  },
+  "toast-notification": {
+    page: dynamic(() => import("@/components/toast-notification/page")),
+    title: "Всплывающие уведомления",
+    description: "Система уведомлений с глобальным контекстом и стеком тостов.",
+  },
+  "context-menu": {
+    page: dynamic(() => import("@/components/context-menu/page")),
+    title: "Контекстное меню",
+    description:
+      "Контекстное меню по правому клику с поддержкой вложенного подменю, умным позиционированием у краёв экрана и анимацией.",
+  },
+} as const;

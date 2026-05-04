@@ -1,11 +1,11 @@
 "use client";
-import useMainContext from "@/components/main/useMainContext";
-import { useMemo } from "react";
-import { linksUIData } from "@/data/LinksUIData";
-import Link from "next/link";
-import { ArrowBigRight, Monitor, Smartphone } from "lucide-react";
 import Divider from "@/components/main/Divider";
+import useMainContext from "@/components/main/useMainContext";
+import { linksUIData } from "@/data/LinksUIData";
 import { motion } from "framer-motion";
+import { ArrowBigRight, Monitor, Smartphone } from "lucide-react";
+import Link from "next/link";
+import { useMemo } from "react";
 
 export default function ContainerComponents() {
   const { query, filter, sort } = useMainContext();
@@ -38,7 +38,7 @@ export default function ContainerComponents() {
               className={"flex"}
             >
               <Link
-                href={component.href}
+                href={"/work/" + component.href}
                 className={
                   "relative p-5 border" +
                   " border-slate-800/50 group bg-slate-900/30 transition-all duration-300 flex flex-col w-full" +
