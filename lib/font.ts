@@ -3,7 +3,9 @@ import {
   DM_Sans,
   Fira_Code,
   Geist,
+  Golos_Text,
   Inter,
+  JetBrains_Mono,
   Manrope,
   Montserrat,
   Onest,
@@ -53,6 +55,14 @@ export const onest = Onest({
   weight: "variable",
 });
 export const fira_code = Fira_Code({
+  subsets: ["latin", "cyrillic"],
+  weight: "variable",
+});
+export const jetbrains_mono = JetBrains_Mono({
+  subsets: ["latin", "cyrillic"],
+  weight: "variable",
+});
+export const golos_text = Golos_Text({
   subsets: ["latin", "cyrillic"],
   weight: "variable",
 });

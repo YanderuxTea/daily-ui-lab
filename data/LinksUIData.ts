@@ -157,7 +157,17 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(4, 5, 2026),
   },
+  {
+    href: "tag-input",
+    title: "Поле ввода тегов",
+    devices: ["pc", "mobile"],
+    description:
+      "Интерактивное поле для создания и управления тегами с автодополнением и клавиатурной навигацией.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(5, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
+
 export type PageId = (typeof linksUIData)[number]["href"];
 type PageTitle = (typeof linksUIData)[number]["title"];
 type PageDesc = (typeof linksUIData)[number]["description"];
@@ -258,5 +268,11 @@ export const dynamicPageMap: Record<
     title: "Контекстное меню",
     description:
       "Контекстное меню по правому клику с поддержкой вложенного подменю, умным позиционированием у краёв экрана и анимацией.",
+  },
+  "tag-input": {
+    page: dynamic(() => import("@/components/tag-input/page")),
+    title: "Поле ввода тегов",
+    description:
+      "Интерактивное поле для создания и управления тегами с автодополнением и клавиатурной навигацией.",
   },
 } as const;
