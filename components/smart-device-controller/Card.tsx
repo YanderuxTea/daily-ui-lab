@@ -33,7 +33,10 @@ export default function Card() {
         isOn={isOn}
         setIsOn={setIsOn}
       />
-      <MainCard isOn={isOn} />
+      <MainCard
+        isOn={isOn}
+        mode={mode}
+      />
       <ModeSwitch
         isOn={isOn}
         mode={mode}

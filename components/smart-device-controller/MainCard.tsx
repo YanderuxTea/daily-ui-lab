@@ -5,10 +5,12 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Minus, Plus } from "lucide-react";
 import { useState } from "react";
+import { Mode } from "./Card";
 type Props = {
   isOn: boolean;
+  mode: Mode;
 };
-export default function MainCard({ isOn }: Props) {
+export default function MainCard({ isOn, mode }: Props) {
   const [temperature, setTemperature] = useState<number>(22);
 
   return (
@@ -35,26 +37,30 @@ export default function MainCard({ isOn }: Props) {
 
         <p className={cn("text-2xl text-white/30 absolute -right-7.5")}>°C</p>
       </div>
-      <div className={cn("flex flex-row gap-6")}>
-        <button
-          onClick={() => setTemperature((prev) => Math.max(16, prev - 1))}
-          disabled={!isOn}
-          className={cn(
-            "border border-white/10 rounded-[20px] transition-all duration-200 cursor-pointer flex items-center justify-center text-white w-14.5 aspect-square disabled:cursor-not-allowed disabled:opacity-20 disabled:scale-85 hover:bg-white/5 active:scale-90 disabled:bg-transparent",
-          )}
+      {mode !== "auto" && (
+        <div
+          className={cn("flex flex-row gap-6 transition-opacity duration-200")}
         >
-          <Minus size={24} />
-        </button>
-        <button
-          onClick={() => setTemperature((prev) => Math.min(30, prev + 1))}
-          disabled={!isOn}
-          className={cn(
-            "border border-white/10 rounded-[20px] transition-all duration-200 cursor-pointer flex items-center justify-center text-white w-14.5 aspect-square disabled:cursor-not-allowed disabled:opacity-20 disabled:scale-85 hover:bg-white/5 active:scale-90 disabled:bg-transparent",
-          )}
-        >
-          <Plus size={24} />
-        </button>
-      </div>
+          <button
+            onClick={() => setTemperature((prev) => Math.max(16, prev - 1))}
+            disabled={!isOn}
+            className={cn(
+              "border border-white/10 rounded-[20px] transition-all duration-200 cursor-pointer flex items-center justify-center text-white w-14.5 aspect-square disabled:cursor-not-allowed disabled:opacity-20 disabled:scale-85 hover:bg-white/5 active:scale-90 disabled:bg-transparent",
+            )}
+          >
+            <Minus size={24} />
+          </button>
+          <button
+            onClick={() => setTemperature((prev) => Math.min(30, prev + 1))}
+            disabled={!isOn}
+            className={cn(
+              "border border-white/10 rounded-[20px] transition-all duration-200 cursor-pointer flex items-center justify-center text-white w-14.5 aspect-square disabled:cursor-not-allowed disabled:opacity-20 disabled:scale-85 hover:bg-white/5 active:scale-90 disabled:bg-transparent",
+            )}
+          >
+            <Plus size={24} />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

@@ -25,17 +25,19 @@ export default function HeaderCard({ isOn, setIsOn, mode }: Props) {
         className={cn(
           "flex items-start p-1 w-14 h-8 flex-row rounded-full cursor-pointer transition-colors duration-200",
           isOn ? "justify-end" : "justify-start ",
-          isOn && mode === "cool"
-            ? "bg-sdc-accent"
-            : mode === "heat"
-              ? "bg-sdc-orange"
-              : mode === "auto"
-                ? "bg-[#22c55e]"
-                : "bg-[#3f3f46]",
+          isOn
+            ? mode === "cool"
+              ? "bg-sdc-accent"
+              : mode === "heat"
+                ? "bg-sdc-orange"
+                : mode === "auto"
+                  ? "bg-[#22c55e]"
+                  : "bg-[#3f3f46]"
+            : "bg-[#3f3f46]",
         )}
       >
         <motion.div
-          layout
+          layout={"x"}
           className={cn("bg-white w-6 aspect-square rounded-full")}
         ></motion.div>
       </div>
