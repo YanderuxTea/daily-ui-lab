@@ -203,3 +203,11 @@
   --color-ti-error: #f87171;
   --color-ti-error-glow: #ef444420;
 }
+@theme {
+  --color-sdc-bg: #0a0a0a;
+  --color-sdc-card: #1c1c1e;
+  --color-sdc-card-active: #242426;
+  --color-sdc-accent: #3b82f6;
+  --color-sdc-orange: #f97316;
+  --color-sdc-text-mute: #a1a1aa;
+}

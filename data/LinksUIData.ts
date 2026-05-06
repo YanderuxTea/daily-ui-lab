@@ -166,6 +166,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(5, 5, 2026),
   },
+  {
+    href: "smart-device-controller",
+    title: "Контроллер умного дома",
+    devices: ["pc", "mobile"],
+    description:
+      "Интерактивная карточка управления климатом с анимированным переключателем питания, индикатором состояния и выбором режимов.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(6, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -274,5 +283,11 @@ export const dynamicPageMap: Record<
     title: "Поле ввода тегов",
     description:
       "Интерактивное поле для создания и управления тегами с автодополнением и клавиатурной навигацией.",
+  },
+  "smart-device-controller": {
+    page: dynamic(() => import("@/components/smart-device-controller/page")),
+    title: "Контроллер умного дома",
+    description:
+      "Интерактивная карточка управления климатом с анимированным переключателем питания, индикатором состояния и выбором режимов.",
   },
 } as const;

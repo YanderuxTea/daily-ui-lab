@@ -12,6 +12,8 @@ import {
   Space_Grotesk,
   Space_Mono,
   Syne,
+  Unbounded,
+  Plus_Jakarta_Sans,
 } from "next/font/google";
 
 export const montserrat = Montserrat({
@@ -64,5 +66,13 @@ export const jetbrains_mono = JetBrains_Mono({
 });
 export const golos_text = Golos_Text({
   subsets: ["latin", "cyrillic"],
+  weight: "variable",
+});
+export const unbounded = Unbounded({
+  subsets: ["latin", "cyrillic"],
+  weight: "variable",
+});
+export const plus_jakarta_sans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
   weight: "variable",
 });
