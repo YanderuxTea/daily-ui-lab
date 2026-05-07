@@ -211,3 +211,21 @@
   --color-sdc-orange: #f97316;
   --color-sdc-text-mute: #a1a1aa;
 }
+@theme {
+  --color-qn-bg: #0b0b0f;
+  --color-qn-surface: #13131a;
+  --color-qn-surface-light: #1a1a24;
+
+  --color-qn-border: #27272f;
+
+  --color-qn-text: #f5f7fa;
+  --color-qn-text-muted: #8b90a0;
+
+  --color-qn-accent: #8b5cf6;
+  --color-qn-accent-soft: #a78bfa;
+
+  --color-qn-danger: #ef4444;
+  --color-qn-warning: #f59e0b;
+
+  --color-qn-pinned: #312e81;
+}

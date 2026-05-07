@@ -4,16 +4,17 @@ import {
   Fira_Code,
   Geist,
   Golos_Text,
+  IBM_Plex_Mono,
   Inter,
   JetBrains_Mono,
   Manrope,
   Montserrat,
   Onest,
+  Plus_Jakarta_Sans,
   Space_Grotesk,
   Space_Mono,
   Syne,
   Unbounded,
-  Plus_Jakarta_Sans,
 } from "next/font/google";
 
 export const montserrat = Montserrat({
@@ -75,4 +76,8 @@ export const unbounded = Unbounded({
 export const plus_jakarta_sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: "variable",
+});
+export const ibm_plex_mono = IBM_Plex_Mono({
+  subsets: ["latin", "cyrillic"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });

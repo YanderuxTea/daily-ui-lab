@@ -175,6 +175,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(6, 5, 2026),
   },
+  {
+    href: "quick-notes-widget",
+    title: "Виджет быстрых заметок",
+    devices: ["pc", "mobile"],
+    description:
+      "Минималистичный виджет заметок с мгновенным добавлением, закреплением и удалением карточек. Поддерживает микроанимации, автофокус и визуальное разделение pinned / обычных заметок.",
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(7, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -289,5 +298,11 @@ export const dynamicPageMap: Record<
     title: "Контроллер умного дома",
     description:
       "Интерактивная карточка управления климатом с анимированным переключателем питания, индикатором состояния и выбором режимов.",
+  },
+  "quick-notes-widget": {
+    page: dynamic(() => import("@/components/quick-notes-widget/page")),
+    title: "Виджет быстрых заметок",
+    description:
+      "Минималистичный виджет заметок с мгновенным добавлением, закреплением и удалением карточек. Поддерживает микроанимации, автофокус и визуальное разделение pinned / обычных заметок.",
   },
 } as const;
