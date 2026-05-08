@@ -309,3 +309,16 @@
 ![Preview](/public/quick-notes-widget.gif)
 
 </details>
+
+### 20. Password Strength Meter
+
+- **Описание:** Интерактивный индикатор оценки надёжности пароля с визуальной обратной связью и пошаговыми критериями.
+- **Тайминг реализации:** ~1 час.
+- **Путь:** `/password-strength-meter`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/password-strength-meter.gif)
+
+</details>

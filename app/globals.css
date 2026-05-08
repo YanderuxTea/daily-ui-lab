@@ -229,3 +229,17 @@
 
   --color-qn-pinned: #312e81;
 }
+@theme {
+  --color-psm-bg: #1a1a2e;
+  --color-psm-surface: #2a2a3c;
+  --color-psm-text: #e0e0e0;
+  --color-psm-muted: #6b6b80;
+  --color-psm-weak: #ef4444;
+  --color-psm-fair: #f59e0b;
+  --color-psm-good: #3b82f6;
+  --color-psm-strong: #10b981;
+  --color-psm-accent: #6366f1;
+  --color-psm-border: #3f3f5c;
+  --color-psm-check: #10b981;
+  --color-psm-cross: #6b6b80;
+}

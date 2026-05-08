@@ -184,6 +184,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(7, 5, 2026),
   },
+  {
+    href: "password-strength-meter",
+    title: "Индикатор силы пароля",
+    description:
+      "Интерактивный индикатор оценки надёжности пароля с визуальной обратной связью и пошаговыми критериями.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(8, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -304,5 +313,11 @@ export const dynamicPageMap: Record<
     title: "Виджет быстрых заметок",
     description:
       "Минималистичный виджет заметок с мгновенным добавлением, закреплением и удалением карточек. Поддерживает микроанимации, автофокус и визуальное разделение pinned / обычных заметок.",
+  },
+  "password-strength-meter": {
+    page: dynamic(() => import("@/components/password-strength-meter/page")),
+    title: "Индикатор силы пароля",
+    description:
+      "Интерактивный индикатор оценки надёжности пароля с визуальной обратной связью и пошаговыми критериями.",
   },
 } as const;
