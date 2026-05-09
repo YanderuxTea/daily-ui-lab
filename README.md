@@ -91,7 +91,8 @@
   - Пружинная анимация появления (`Framer Motion Spring`).
   - Автофокус на `input` при открытии.
   - Backdrop-blur подложка для концентрации внимания на поиске.
-  <details>
+
+<details>
   <summary style="font-weight: bold">Превью</summary>
 
 ![Preview](/public/command-palette.gif)
@@ -320,5 +321,18 @@
 <summary style="font-weight: bold">Превью</summary>
 
 ![Preview](/public/password-strength-meter.gif)
+
+</details>
+
+### 21. Interactive Work Status Switcher
+
+- **Описание:** Плавный переключатель рабочего статуса с использованием Framer Motion для анимации общего фона и пульсирующим индикатором активности.
+- **Тайминг реализации:** ~30 минут.
+- **Путь:** `/interactive-work-status-switcher`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/interactive-work-status-switcher.gif)
 
 </details>

@@ -193,6 +193,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS"],
     createdAt: getValidDate(8, 5, 2026),
   },
+  {
+    href: "interactive-work-status-switcher",
+    title: "Переключатель рабочего статуса",
+    description:
+      "Интерактивный компонент для смены текущего состояния работы с динамической индикацией и микро-взаимодействиями.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(9, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -319,5 +328,13 @@ export const dynamicPageMap: Record<
     title: "Индикатор силы пароля",
     description:
       "Интерактивный индикатор оценки надёжности пароля с визуальной обратной связью и пошаговыми критериями.",
+  },
+  "interactive-work-status-switcher": {
+    page: dynamic(
+      () => import("@/components/interactive-work-status-switcher/page"),
+    ),
+    title: "Переключатель рабочего статуса",
+    description:
+      "Интерактивный компонент для смены текущего состояния работы с динамической индикацией и микро-взаимодействиями.",
   },
 } as const;

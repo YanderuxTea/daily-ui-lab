@@ -243,3 +243,10 @@
   --color-psm-check: #10b981;
   --color-psm-cross: #6b6b80;
 }
+
+@theme {
+  --color-wms-focus: #8b5cf6;
+  --color-wms-break: #10b981;
+  --color-wms-away: #f59e0b;
+  --color-wms-bg: #1e293b;
+}
