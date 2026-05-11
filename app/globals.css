@@ -250,3 +250,27 @@
   --color-wms-away: #f59e0b;
   --color-wms-bg: #1e293b;
 }
+
+@theme {
+  --color-sr-bg: #0f0d0a;
+  --color-sr-card: #1a1610;
+  --color-sr-surface: #211c12;
+  --color-sr-border: #252018;
+  --color-sr-border-hover: #3a3020;
+  --color-sr-star-empty: #292119;
+  --color-sr-star-filled: #f59e0b;
+  --color-sr-label-terrible: #ef4444;
+  --color-sr-label-bad: #f97316;
+  --color-sr-label-okay: #eab308;
+  --color-sr-label-good: #84cc16;
+  --color-sr-label-great: #22c55e;
+  --color-sr-text: #f0ebe3;
+  --color-sr-subtext: #6a5e52;
+  --color-sr-placeholder: #4a4038;
+  --color-sr-btn-disabled-text: #4a4038;
+  --color-sr-btn-active-bg: #f59e0b;
+  --color-sr-btn-active-text: #0f0d0a;
+  --color-sr-success-bg: #14251a;
+  --color-sr-success-border: #1e3828;
+  --color-sr-success-icon: #22c55e;
+}

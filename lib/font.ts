@@ -1,4 +1,5 @@
 import {
+  Cormorant_Garamond,
   DM_Mono,
   DM_Sans,
   Fira_Code,
@@ -80,4 +81,8 @@ export const plus_jakarta_sans = Plus_Jakarta_Sans({
 export const ibm_plex_mono = IBM_Plex_Mono({
   subsets: ["latin", "cyrillic"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+export const cormorant_garamond = Cormorant_Garamond({
+  subsets: ["latin", "cyrillic"],
+  weight: "variable",
 });

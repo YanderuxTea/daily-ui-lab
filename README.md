@@ -336,3 +336,17 @@
 ![Preview](/public/interactive-work-status-switcher.gif)
 
 </details>
+
+### 22. Star Rating Review
+
+- **Описание:** Интерактивная форма оценки с плавными переходами на Framer Motion, возможностью поставить от 1 до 5 звёзд (с эффектом наведения) и анимированным экраном благодарности после отправки.
+
+- **Тайминг реализации:** ~45 минут.
+
+- **Путь:** `/star-rating-review`
+
+<details> <summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/star-rating-review.gif)
+
+</details>

@@ -202,6 +202,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(9, 5, 2026),
   },
+  {
+    href: "star-rating-review",
+    title: "Оценка и отзыв",
+    description:
+      "Карточка оценки продукта с пятизвёздочной системой и текстовым комментарием.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(11, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -336,5 +345,11 @@ export const dynamicPageMap: Record<
     title: "Переключатель рабочего статуса",
     description:
       "Интерактивный компонент для смены текущего состояния работы с динамической индикацией и микро-взаимодействиями.",
+  },
+  "star-rating-review": {
+    page: dynamic(() => import("@/components/star-rating-review/page")),
+    title: "Оценка и отзыв",
+    description:
+      "Карточка оценки продукта с пятизвёздочной системой и текстовым комментарием.",
   },
 } as const;
