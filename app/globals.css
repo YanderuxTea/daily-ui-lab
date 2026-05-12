@@ -274,3 +274,25 @@
   --color-sr-success-border: #1e3828;
   --color-sr-success-icon: #22c55e;
 }
+
+@theme {
+  --color-pw-bg: #0d0b14;
+  --color-pw-card: #120f1d;
+  --color-pw-card-border: #1e1930;
+  --color-pw-surface: #181420;
+  --color-pw-option-border: #231e2e;
+  --color-pw-option-border-hover: #3d3456;
+  --color-pw-option-border-selected: #7c3aed;
+  --color-pw-fill-selected: rgba(124, 58, 237, 0.18);
+  --color-pw-fill-idle: rgba(255, 255, 255, 0.03);
+  --color-pw-accent: #7c3aed;
+  --color-pw-badge-bg: #1e1930;
+  --color-pw-badge-border: #2a2440;
+  --color-pw-text: #e8e0f0;
+  --color-pw-text-muted: #9d94b8;
+  --color-pw-text-faint: #4a4060;
+  --color-pw-dot-border: #3d3456;
+  --color-pw-btn-voted-bg: #1e1930;
+  --color-pw-btn-voted-text: #7c3aed;
+  --color-pw-btn-voted-border: #2a2440;
+}

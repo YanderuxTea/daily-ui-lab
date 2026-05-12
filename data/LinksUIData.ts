@@ -211,6 +211,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(11, 5, 2026),
   },
+  {
+    href: "poll-widget",
+    title: "Виджет голосования",
+    description:
+      "Виджет опроса с анимированными полосами результатов. Данные хранятся локально в массиве - легко подключить к API.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(12, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -351,5 +360,11 @@ export const dynamicPageMap: Record<
     title: "Оценка и отзыв",
     description:
       "Карточка оценки продукта с пятизвёздочной системой и текстовым комментарием.",
+  },
+  "poll-widget": {
+    page: dynamic(() => import("@/components/poll-widget/page")),
+    title: "Виджет голосования",
+    description:
+      "Виджет опроса с анимированными полосами результатов. Данные хранятся локально в массиве - легко подключить к API.",
   },
 } as const;

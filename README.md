@@ -350,3 +350,18 @@
 ![Preview](/public/star-rating-review.gif)
 
 </details>
+
+### 23. Poll Widget
+
+- **Описание:** Интерактивный виджет опроса с выбором фреймворка. Реализована логика подсчёта голосов в реальном времени, анимированные прогресс-бары на Framer Motion после голосования и состояние «Голос учтён» с подтверждающей иконкой.
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/poll-widget`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/poll-widget.gif)
+
+</details>
