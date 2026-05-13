@@ -2,6 +2,7 @@
 
 import { space_mono } from "@/lib/font";
 import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   Dispatch,
   SetStateAction,
@@ -78,9 +79,17 @@ export default function ClockFace({
     >
       <div className={cn("flex flex-row")}>
         <div className={cn("flex flex-col text-center")}>
-          <p className={cn("text-[44px] font-bold", space_mono.className)}>
-            {times.minute.toString().padStart(2, "0")}
-          </p>
+          <AnimatePresence mode={"wait"}>
+            <motion.p
+              key={times.minute}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className={cn("text-[44px] font-bold", space_mono.className)}
+            >
+              {times.minute.toString().padStart(2, "0")}
+            </motion.p>
+          </AnimatePresence>
           <p
             className={cn(
               "text-ct-sep text-[10px] font-medium tracking-widest",
@@ -93,9 +102,17 @@ export default function ClockFace({
           :
         </span>
         <div className={cn("flex flex-col text-center")}>
-          <p className={cn("text-[44px] font-bold", space_mono.className)}>
-            {times.second.toString().padStart(2, "0")}
-          </p>
+          <AnimatePresence mode={"wait"}>
+            <motion.p
+              key={times.second}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className={cn("text-[44px] font-bold", space_mono.className)}
+            >
+              {times.second.toString().padStart(2, "0")}
+            </motion.p>
+          </AnimatePresence>
           <p
             className={cn(
               "text-ct-sep text-[10px] font-medium tracking-widest",
