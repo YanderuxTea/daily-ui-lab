@@ -220,6 +220,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(12, 5, 2026),
   },
+  {
+    href: "countdown-timer",
+    title: "Таймер обратного отсчёта",
+    description:
+      "Таймер обратного отсчёта с flip-анимацией цифр и кольцом прогресса.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(13, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -366,5 +375,11 @@ export const dynamicPageMap: Record<
     title: "Виджет голосования",
     description:
       "Виджет опроса с анимированными полосами результатов. Данные хранятся локально в массиве - легко подключить к API.",
+  },
+  "countdown-timer": {
+    page: dynamic(() => import("@/components/countdown-timer/page")),
+    title: "Таймер обратного отсчёта",
+    description:
+      "Таймер обратного отсчёта с flip-анимацией цифр и кольцом прогресса.",
   },
 } as const;

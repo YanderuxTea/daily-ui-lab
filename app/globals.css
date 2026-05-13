@@ -296,3 +296,26 @@
   --color-pw-btn-voted-text: #7c3aed;
   --color-pw-btn-voted-border: #2a2440;
 }
+
+@theme {
+  --color-ct-bg: #0a0810;
+  --color-ct-surface: #141018;
+  --color-ct-border: #221d2d;
+  --color-ct-ring-track: #1a1530;
+  --color-ct-ring-accent: #7c3aed;
+  --color-ct-ring-warning: #f59e0b;
+  --color-ct-ring-danger: #ef4444;
+  --color-ct-sep: #2d2840;
+  --color-ct-text: #e8e0f8;
+  --color-ct-label: #4d4560;
+  --color-ct-preset-text: #6b5f8a;
+  --color-ct-preset-text-hover: #c4b5fd;
+  --color-ct-preset-active-bg: #1e1830;
+  --color-ct-preset-active-border: #7c3aed;
+  --color-ct-preset-active-text: #a78bfa;
+  --color-ct-btn-primary: #7c3aed;
+  --color-ct-btn-paused: #2d2440;
+  --color-ct-btn-reset-bg: #141018;
+  --color-ct-btn-reset-text: #4d4560;
+  --color-ct-status-expired: #ef4444;
+}

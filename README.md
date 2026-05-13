@@ -365,3 +365,18 @@
 ![Preview](/public/poll-widget.gif)
 
 </details>
+
+### 24. Countdown Timer
+
+- **Описание:** Минималистичный таймер обратного отсчета с динамическим SVG-индикатором прогресса. Поддерживает пресеты времени, смену цветовой схемы в зависимости от оставшегося времени (зеленый -> желтый -> красный) и адаптивное управление через useRef и setInterval.
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/countdown-timer`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/countdown-timer.gif)
+
+</details>
