@@ -229,6 +229,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(13, 5, 2026),
   },
+  {
+    href: "speed-dial-fab",
+    title: "Плавающая кнопка действий",
+    description:
+      "Плавающая кнопка с раскрывающимися дочерними действиями. Каждое дочернее действие имеет label-тег слева.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(14, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -381,5 +390,11 @@ export const dynamicPageMap: Record<
     title: "Таймер обратного отсчёта",
     description:
       "Таймер обратного отсчёта с flip-анимацией цифр и кольцом прогресса.",
+  },
+  "speed-dial-fab": {
+    page: dynamic(() => import("@/components/speed-dial-fab/page")),
+    title: "Плавающая кнопка действий",
+    description:
+      "Плавающая кнопка с раскрывающимися дочерними действиями. Каждое дочернее действие имеет label-тег слева.",
   },
 } as const;

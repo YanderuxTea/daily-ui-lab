@@ -319,3 +319,22 @@
   --color-ct-btn-reset-text: #4d4560;
   --color-ct-status-expired: #ef4444;
 }
+
+@theme {
+  --color-sd-bg: #0a0810;
+  --color-sd-backdrop: rgba(8, 6, 16, 0.72);
+  --color-sd-surface: #141020;
+  --color-sd-surface-border: #1e1930;
+  --color-sd-child-bg: #1e1830;
+  --color-sd-child-bg-hover: #281e40;
+  --color-sd-child-border: rgba(255, 255, 255, 0.08);
+  --color-sd-fab-bg: #7c3aed;
+  --color-sd-fab-bg-hover: #6d28d9;
+  --color-sd-fab-bg-open: #4c1d95;
+  --color-sd-label-bg: #1e1830;
+  --color-sd-label-text: #c4b5fd;
+  --color-sd-icon: #a78bfa;
+  --color-sd-text: #e8e0f8;
+  --color-sd-text-muted: #6b5f8a;
+  --color-sd-toast-border: rgba(255, 255, 255, 0.1);
+}
