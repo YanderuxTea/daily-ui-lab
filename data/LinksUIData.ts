@@ -238,6 +238,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(14, 5, 2026),
   },
+  {
+    href: "word-counter",
+    title: "Счётчик слов",
+    description:
+      "Счётчик слов с живой статистикой и лимитом в реальном времени.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(15, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -396,5 +405,11 @@ export const dynamicPageMap: Record<
     title: "Плавающая кнопка действий",
     description:
       "Плавающая кнопка с раскрывающимися дочерними действиями. Каждое дочернее действие имеет label-тег слева.",
+  },
+  "word-counter": {
+    page: dynamic(() => import("@/components/word-counter/page")),
+    title: "Счётчик слов",
+    description:
+      "Счётчик слов с живой статистикой и лимитом в реальном времени.",
   },
 } as const;
