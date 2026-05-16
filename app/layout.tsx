@@ -1,5 +1,6 @@
 import Header from "@/components/main/Header";
 import { Analytics } from "@vercel/analytics/next";
+import localforage from "localforage";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import "./globals.css";
@@ -7,7 +8,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "UI Lab",
 };
-
+localforage.config({
+  name: "DailyUILab",
+  storeName: "ui_components",
+});
 export default function RootLayout({
   children,
 }: Readonly<{

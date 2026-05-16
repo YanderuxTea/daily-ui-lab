@@ -247,6 +247,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(15, 5, 2026),
   },
+  {
+    href: "daily-planner",
+    title: "Ежедневник / Планировщик дня",
+    description:
+      "Ежедневный Todo с локальным хранилищем - список задач на сегодня, автосброс по дате, кольцевой прогресс-бар, анимация появления/удаления через AnimatePresence и плавный уход карточек.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(16, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -411,5 +420,11 @@ export const dynamicPageMap: Record<
     title: "Счётчик слов",
     description:
       "Счётчик слов с живой статистикой и лимитом в реальном времени.",
+  },
+  "daily-planner": {
+    page: dynamic(() => import("@/components/daily-planner/page")),
+    title: "Ежедневник / Планировщик дня",
+    description:
+      "Ежедневный Todo с локальным хранилищем - список задач на сегодня, автосброс по дате, кольцевой прогресс-бар, анимация появления/удаления через AnimatePresence и плавный уход карточек.",
   },
 } as const;

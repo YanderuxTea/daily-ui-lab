@@ -358,3 +358,26 @@
   --color-wc-placeholder: #3a3354;
   --color-wc-ta-focus-border: #6d28d9;
 }
+@theme {
+  --color-dp-bg: #08060f;
+  --color-dp-surface: #110e1c;
+
+  --color-dp-border: #1c1830;
+  --color-dp-border-hover: #2a2448;
+  --color-dp-border-focus: #6d28d9;
+
+  --color-dp-bar-track: #1a1728;
+  --color-dp-ring-track: #3a3060;
+
+  --color-dp-accent: #7c3aed;
+  --color-dp-accent-hover: #6d28d9;
+  --color-dp-accent-mid: #a78bfa;
+
+  --color-dp-text: #e2ddf0;
+  --color-dp-text-task: #c4b5fd;
+  --color-dp-text-muted: #6b5f8a;
+  --color-dp-text-faint: #4a4268;
+
+  --color-dp-success: #22c55e;
+  --color-dp-danger: #ef4444;
+}
