@@ -155,7 +155,7 @@ export default function GGPage() {
         <div className={cn("flex flex-row gap-2 items-center")}>
           <div
             className={cn(
-              "w-2/3 shrink-0 px-3.5 py-3 border bg-gg-dark7 rounded-xl border-gg-dark2 text-xs",
+              "flex-1 shrink-0 px-3.5 py-3 border bg-gg-dark7 rounded-xl border-gg-dark2 text-xs",
             )}
           >
             <p
@@ -185,7 +185,7 @@ export default function GGPage() {
               }
             }}
             className={cn(
-              "w-full cursor-pointer border px-4.5 py-2.5 font-medium text-[13px] rounded-[10px] leading-none transition-all duration-150 active:scale-96 flex flex-row gap-1 items-center justify-center",
+              "cursor-pointer border px-4.5 py-2.5 font-medium text-[13px] rounded-[10px] leading-none transition-all duration-150 active:scale-96 flex flex-row gap-1 items-center justify-center",
               copied
                 ? "bg-gg-dark1 text-gg-success border-gg-success"
                 : "bg-gg-dark3 border-gg-dark6 text-gg-indigo hover:bg-gg-dark4 hover:border-gg-purple",
