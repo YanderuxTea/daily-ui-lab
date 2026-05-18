@@ -256,6 +256,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(16, 5, 2026),
   },
+  {
+    href: "gradient-generator",
+    title: "Генератор градиентов",
+    description:
+      "Генератор CSS-градиентов с двумя HSL-пикерами и слайдером угла - три параметра на каждый цвет (hue/насыщенность/яркость), слайдер угла с кнопками ±5°.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(18, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -426,5 +435,11 @@ export const dynamicPageMap: Record<
     title: "Ежедневник / Планировщик дня",
     description:
       "Ежедневный Todo с локальным хранилищем - список задач на сегодня, автосброс по дате, кольцевой прогресс-бар, анимация появления/удаления через AnimatePresence и плавный уход карточек.",
+  },
+  "gradient-generator": {
+    page: dynamic(() => import("@/components/gradient-generator/page")),
+    title: "Генератор градиентов",
+    description:
+      "Генератор CSS-градиентов с двумя HSL-пикерами и слайдером угла - три параметра на каждый цвет (hue/насыщенность/яркость), слайдер угла с кнопками ±5°.",
   },
 } as const;
