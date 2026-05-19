@@ -265,6 +265,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS"],
     createdAt: getValidDate(18, 5, 2026),
   },
+  {
+    href: "mini-event-calendar",
+    title: "Мини-календарь событий",
+    description:
+      "Интерактивный мини-календарь с менеджером задач на выбранный день и плавной анимацией событий. Сетка автоматически подстраивается под месяц, данные сохраняются локально и готовы к синхронизации с бэкендом.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(19, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -441,5 +450,11 @@ export const dynamicPageMap: Record<
     title: "Генератор градиентов",
     description:
       "Генератор CSS-градиентов с двумя HSL-пикерами и слайдером угла - три параметра на каждый цвет (hue/насыщенность/яркость), слайдер угла с кнопками ±5°.",
+  },
+  "mini-event-calendar": {
+    page: dynamic(() => import("@/components/mini-event-calendar/page")),
+    title: "Мини-календарь событий",
+    description:
+      "Интерактивный мини-календарь с менеджером задач на выбранный день и плавной анимацией событий. Сетка автоматически подстраивается под месяц, данные сохраняются локально и готовы к синхронизации с бэкендом.",
   },
 } as const;

@@ -398,3 +398,25 @@
   --color-gg-lavender: #c4b5fd;
   --color-gg-indigo: #a78bfa;
 }
+
+@theme {
+  --color-mec-primary: #1a1530;
+  --color-mec-secondary: #2a2448;
+  --color-mec-accent: #6d28d9;
+  --color-mec-warning: #f59e0b;
+  --color-mec-dark: #1c1830;
+  --color-mec-info: #38bdf8;
+  --color-mec-muted: #6b5f8a;
+  --color-mec-purple: #a78bfa;
+  --color-mec-danger: #ef4444;
+  --color-mec-deep: #4a4268;
+  --color-mec-light: #e2ddf0;
+  --color-mec-verydark: #120f1c;
+  --color-mec-mid: #3a3060;
+  --color-mec-black: #08060f;
+  --color-mec-ink: #110e1c;
+  --color-mec-lavender: #c4b5fd;
+  --color-mec-violet: #7c3aed;
+  --color-mec-yellow: #fe9;
+  --color-mec-success: #22c55e;
+}
