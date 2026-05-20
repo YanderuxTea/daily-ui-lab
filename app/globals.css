@@ -420,3 +420,23 @@
   --color-mec-yellow: #fe9;
   --color-mec-success: #22c55e;
 }
+@theme {
+  --color-ag-primary: #c4b5fd;
+  --color-ag-secondary: #7c3aed;
+  --color-ag-accent: #a78bfa;
+  --color-ag-muted: #4a4268;
+  --color-ag-darkest: #0d0b18;
+  --color-ag-darker: #1a1530;
+  --color-ag-medium: #6b5f8a;
+  --color-ag-deep: #1e1a2e;
+  --color-ag-ink: #3a3060;
+  --color-ag-warning: #f59e0b;
+  --color-ag-success: #34d399;
+  --color-ag-info: #38bdf8;
+  --color-ag-pink: #f472b6;
+  --color-ag-green: #22c55e;
+  --color-ag-bg-dark: #141020;
+  --color-ag-bg-darker: #1e1830;
+  --color-ag-error: #ef4444;
+  --color-ag-border: #2a2448;
+}

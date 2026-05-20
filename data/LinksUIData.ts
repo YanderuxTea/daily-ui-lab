@@ -274,6 +274,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(19, 5, 2026),
   },
+  {
+    href: "avatar-group",
+    title: "Группа аватарок",
+    description:
+      "Стопка аватарок с hover-разлётом и счётчиком остальных участников.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(20, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -456,5 +465,11 @@ export const dynamicPageMap: Record<
     title: "Мини-календарь событий",
     description:
       "Интерактивный мини-календарь с менеджером задач на выбранный день и плавной анимацией событий. Сетка автоматически подстраивается под месяц, данные сохраняются локально и готовы к синхронизации с бэкендом.",
+  },
+  "avatar-group": {
+    page: dynamic(() => import("@/components/avatar-group/page")),
+    title: "Группа аватарок",
+    description:
+      "Стопка аватарок с hover-разлётом и счётчиком остальных участников.",
   },
 } as const;
