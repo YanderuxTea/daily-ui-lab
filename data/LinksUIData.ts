@@ -283,6 +283,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(20, 5, 2026),
   },
+  {
+    href: "tooltip",
+    title: "Тултип",
+    description:
+      "Тултип с 4 позициями (top / bottom / left / right), 4 вариантами оформления и настраиваемой задержкой появления.",
+    devices: ["pc"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(21, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -471,5 +480,11 @@ export const dynamicPageMap: Record<
     title: "Группа аватарок",
     description:
       "Стопка аватарок с hover-разлётом и счётчиком остальных участников.",
+  },
+  tooltip: {
+    page: dynamic(() => import("@/components/tooltip/page")),
+    title: "Тултип",
+    description:
+      "Тултип с 4 позициями (top / bottom / left / right), 4 вариантами оформления и настраиваемой задержкой появления.",
   },
 } as const;

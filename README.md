@@ -466,3 +466,24 @@
 ![Preview](/public/avatar-group.gif)
 
 </details>
+
+### 31. Tooltip
+
+- **Описание:** Универсальный компонент‑подсказка, который появляется после настраиваемой задержки при наведении курсора.
+  - **Позиционирование:** 4 варианти (top, bottom, left, right) задаются через `position` и реализованы в `mapPositionTooltip`.
+  - **Варианты оформления:** 4 темв (default, success, dark, danger) - цвета контейнера и всплывающего окна берутся из `mapColorsTooltip`.
+  - **Анимация:** Появление/исчезновение реализовано через `framer‑motion` (`AnimatePresence` + `motion.div`) с плавным изменением `opacity` и смещением `x / y`.
+  - **Логика задержки:** При `onMouseEnter` запускается таймер (`setTimeout`) с указанным `delay`; при `onMouseLeave` таймер очищается, чтобы подсказка не появлялась, если курсор быстро уходит.
+  - **Типизация:** `TooltipData` описывает все параметры (`position`, `variant`, `delay`, `title`, `description`).
+  - **Пример использования:** На странице `tooltip/page.tsx` демонстрируются все позиции, варианты и задержки, перебирая готовые массивы `positionData`, `variantData` и `delayData`.
+
+- **Тайминг реализации:** ~1.5 часа.
+
+- **Путь:** `/tooltip`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/tooltip.gif)
+
+</details>

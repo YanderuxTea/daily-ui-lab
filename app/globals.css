@@ -440,3 +440,24 @@
   --color-ag-error: #ef4444;
   --color-ag-border: #2a2448;
 }
+@theme {
+  --color-t-primary: #a78bfa;
+  --color-t-success-bg: #22c55e33;
+  --color-t-danger-bg: #ef444444;
+  --color-t-danger: #ef4444;
+  --color-t-dark-border: #2a2448;
+  --color-t-bg: #141020;
+  --color-t-border: #2e2848;
+  --color-t-base: #0d0b18;
+  --color-t-success-border: #22c55e44;
+  --color-t-accent: #3a3060;
+  --color-t-hover-bg: #1e1830;
+  --color-t-violet: #7c3aed;
+  --color-t-label: #1e1a30;
+  --color-t-light: #c4b5fd;
+  --color-t-muted: #e2ddf0;
+  --color-t-success-dark: #14251a;
+  --color-t-success: #22c55e;
+  --color-t-danger-border: #ef444433;
+  --color-t-danger-dark: #2a1010;
+}
