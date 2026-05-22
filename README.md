@@ -487,3 +487,23 @@
 ![Preview](/public/tooltip.gif)
 
 </details>
+
+### 32. Toggle Switch
+
+- **Описание:** Интерактивный переключатель (toggle) с поддержкой разных размеров и цветовых тем.
+  - **Размеры:** `sm`, `md`, `lg` - меняют ширину/высоту трека и диаметр «dot».
+  - **Цветовые варианты:** `default`, `green`, `yellow`, `red`, `blue` - задаются через `mapColor`.
+  - **Состояния:** `checked` (включено/выключено) и `disabled` (неактивен). При клике меняется локальное состояние `isChecked`, а анимация перемещения «dot» реализована через `framer‑motion` (spring‑анимация).
+  - **Типизация:** `ToggleSwitch` описывает все свойства (`disabled`, `checked`, `color`, `size`).
+  - **Пример использования:** На странице `toggle-switch/page.tsx` демонстрируются группы настроек, размеров и цветов, перебирая массивы `settingsGroup`, `sizeGroup` и `colorsGroup`.
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/toggle-switch`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/toggle-switch.gif)
+
+</details>

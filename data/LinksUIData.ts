@@ -292,6 +292,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(21, 5, 2026),
   },
+  {
+    href: "toggle-switch",
+    title: "Переключатель",
+    description:
+      "Кастомный toggle switch с тремя размерами (sm / md / lg), пятью цветовыми вариантами и disabled-состоянием.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(22, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -486,5 +495,11 @@ export const dynamicPageMap: Record<
     title: "Тултип",
     description:
       "Тултип с 4 позициями (top / bottom / left / right), 4 вариантами оформления и настраиваемой задержкой появления.",
+  },
+  "toggle-switch": {
+    page: dynamic(() => import("@/components/toggle-switch/page")),
+    title: "Переключатель",
+    description:
+      "Кастомный toggle switch с тремя размерами (sm / md / lg), пятью цветовыми вариантами и disabled-состоянием.",
   },
 } as const;

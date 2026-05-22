@@ -461,3 +461,18 @@
   --color-t-danger-border: #ef444433;
   --color-t-danger-dark: #2a1010;
 }
+@theme {
+  --color-ts-primary: #2a2448;
+  --color-ts-accent-purple: #7c3aed;
+  --color-ts-accent-amber: #f59e0b;
+  --color-ts-accent-blue: #38bdf8;
+  --color-ts-dark-1: #3a3060;
+  --color-ts-dark-2: #0d0b18;
+  --color-ts-dark-3: #1e1a30;
+  --color-ts-success: #22c55e;
+  --color-ts-error: #ef4444;
+  --color-ts-dark-4: #110e1c;
+  --color-ts-dark-5: #1c1830;
+  --color-ts-light-purple: #c4b5fd;
+  --color-ts-muted: #4a4268;
+}
