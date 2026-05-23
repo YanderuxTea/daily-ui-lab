@@ -476,3 +476,22 @@
   --color-ts-light-purple: #c4b5fd;
   --color-ts-muted: #4a4268;
 }
+@theme {
+  --color-csp-bg: #0d0b18;
+  --color-csp-surface: #1e1a30;
+  --color-csp-border: #2a2448;
+  --color-csp-tooltip-bg: #1e1a30;
+  --color-csp-tooltip-border: #2a2448;
+  --color-csp-tooltip-text: #c4b5fd;
+  --color-csp-tab-bg: #141020;
+  --color-csp-tab-border: #1e1a2e;
+  --color-csp-tab-text: #6b5f8a;
+  --color-csp-tab-active-bg: #1e1830;
+  --color-csp-tab-active-border: #7c3aed;
+  --color-csp-tab-active-text: #a78bfa;
+  --color-csp-preview-border: rgba(255, 255, 255, 0.06);
+  --color-csp-preview-name: rgba(255, 255, 255, 0.85);
+  --color-csp-preview-hex: rgba(255, 255, 255, 0.55);
+  --color-csp-toast-active: #a78bfa;
+  --color-csp-toast-idle: #4a4268;
+}

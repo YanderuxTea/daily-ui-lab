@@ -301,6 +301,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(22, 5, 2026),
   },
+  {
+    href: "color-swatch-palette",
+    title: "Палитра цветовых свотчей",
+    description:
+      "Интерактивная палитра цветов с 6 наборами по 10 оттенков (Tailwind-шкала 50–900). Таб-переключатель меняет активный набор. Hover на свотч показывает тултип с названием и HEX, а превью-бар сверху заливается этим цветом с плавным transition.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(23, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -501,5 +510,11 @@ export const dynamicPageMap: Record<
     title: "Переключатель",
     description:
       "Кастомный toggle switch с тремя размерами (sm / md / lg), пятью цветовыми вариантами и disabled-состоянием.",
+  },
+  "color-swatch-palette": {
+    page: dynamic(() => import("@/components/color-swatch-palette/page")),
+    title: "Палитра цветовых свотчей",
+    description:
+      "Интерактивная палитра цветов с 6 наборами по 10 оттенков (Tailwind-шкала 50–900). Таб-переключатель меняет активный набор. Hover на свотч показывает тултип с названием и HEX, а превью-бар сверху заливается этим цветом с плавным transition.",
   },
 } as const;

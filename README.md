@@ -507,3 +507,24 @@
 ![Preview](/public/toggle-switch.gif)
 
 </details>
+
+### 33. Color Swatch Palette
+
+- **Описание:** Интерактивная палитра, позволяющая просматривать набор предопределенных цветов и копировать их HEX‑значения в буфер обмена.
+  - **Выбор цвета:** Через вкладки (`TabColors`) пользователь переключает текущий цветовой набор (violet, blue, green, amber, rose, slate).
+  - **Превью:** Компонент `PreviewColors` отображает выбранный цвет в виде крупного блока и показывает его HEX‑код.
+  - **Копирование:** При клике на любой из небольших блоков в `SelectorColor` HEX‑значение копируется, появляется toast‑сообщение «Скопировано: #xxxxxx», которое исчезает через 2 сек.
+  - **Типизация:** `Colors` (строковый union) задаёт допустимые названия цветов; все состояния (`selectColor`, `copyColors`, `copyFlag`, `previewColors`) типизированы через TypeScript.
+  - **Анимация/UX:** Используется `requestAnimationFrame` для сброса копируемого текста при смене цвета, а также `setTimeout` для автоматического скрытия toast‑сообщения.
+  - **Пример использования:** Страница `color-swatch-palette/page.tsx` собирает все части (`TabColors`, `PreviewColors`, `SelectorColor`) и демонстрирует их в центре экрана.
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/color-swatch-palette`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/color-swatch-palette.gif)
+
+</details>
