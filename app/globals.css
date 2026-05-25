@@ -495,3 +495,40 @@
   --color-csp-toast-active: #a78bfa;
   --color-csp-toast-idle: #4a4268;
 }
+@theme {
+  --color-sl-bg-primary: #1a1728;
+  --color-sl-bg-secondary: #110e1c;
+  --color-sl-bg-tertiary: #141020;
+  --color-sl-border-primary: #1e1a2e;
+  --color-sl-accent-purple: #a78bfa;
+  --color-sl-accent-purple-alpha: #7c3aed44;
+  --color-sl-text-light: #e2ddf0;
+  --color-sl-text-muted: #9d94b8;
+  --color-sl-border-dark: #1c1830;
+  --color-sl-bg-dark: #1e1830;
+  --color-sl-bg-base: #0d0b18;
+  --color-sl-muted-purple: #4a4268;
+  --color-sl-accent-blue: #38bdf8;
+  --color-sl-bg-deep: #2a2448;
+  --color-sl-muted-lavender: #6b5f8a;
+  --color-sl-label: #3a3060;
+  --color-sl-highlight: #2a1e50;
+  --color-sl-pink: #f472b6;
+  --color-sl-bg-darker: #252040;
+  --color-sl-accent-violet: #7c3aed;
+  --color-sl-success: #22c55e;
+  --color-sl-warning: #f59e0b;
+  --color-sl-bg-header: #1a1530;
+  --color-sl-accent-lavender: #c4b5fd;
+
+  --animate-shimmer: shimmer 1.6s linear infinite;
+
+  @keyframes shimmer {
+    0% {
+      background-position: -600px 0;
+    }
+    100% {
+      background-position: 600px 0;
+    }
+  }
+}

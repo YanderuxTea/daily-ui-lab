@@ -528,3 +528,23 @@
 ![Preview](/public/color-swatch-palette.gif)
 
 </details>
+
+### 34. Skeleton Loader
+
+- **Описание:** Универсальный скелетон‑заполнитель, имитирующий загрузку контента.
+  - **Компонент `Skeleton`** - принимает `classname` и выводит `<div>` с градиентным shimmer‑эффектом (`animate‑shimmer`). Стили задаются через Tailwind‑утилиты: `bg-linear-90`, `bg-size-[600px_100%]`, `from‑sl‑bg‑primary`, `via‑sl‑bg‑darker`, `to‑sl‑bg‑primary`.
+  - **Компонент `MainCard`** - обертка с анимацией появления (`framer‑motion` fade‑up) и базовыми стилями карточки (`bg‑sl‑bg‑secondary`, `border‑sl‑border‑dark`, `rounded‑2xl`). Принимает `children` и любые HTML‑атрибуты.
+  - **Доп. файлы:** `StatusTag.tsx` (метка статуса, использующая те же цвета) и `content/` (пример контента, который заменяется скелетоном).
+  - **Типизация:** `Skeleton` типизирован через `{ classname: string }`; `MainCard` использует `ReactNode` и `HTMLAttributes<HTMLDivElement>` - полностью типизировано в TypeScript.
+  - **UX:** Shimmer‑анимация создаёт ощущение «живой» загрузки, а `MainCard` плавно появляется, что делает переход к реальному контенту более естественным.
+
+- **Тайминг реализации:** ~2 часа.
+
+- **Путь:** `/skeleton-loader`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/skeleton-loader.gif)
+
+</details>

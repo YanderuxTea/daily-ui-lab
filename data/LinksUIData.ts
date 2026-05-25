@@ -310,6 +310,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS"],
     createdAt: getValidDate(23, 5, 2026),
   },
+  {
+    href: "skeleton-loader",
+    title: "Скелетон-загрузчик",
+    description:
+      "Скелетон-плейсхолдеры трех типов: карточка профиля, лента постов и таблица пользователей.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(25, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -516,5 +525,11 @@ export const dynamicPageMap: Record<
     title: "Палитра цветовых свотчей",
     description:
       "Интерактивная палитра цветов с 6 наборами по 10 оттенков (Tailwind-шкала 50–900). Таб-переключатель меняет активный набор. Hover на свотч показывает тултип с названием и HEX, а превью-бар сверху заливается этим цветом с плавным transition.",
+  },
+  "skeleton-loader": {
+    page: dynamic(() => import("@/components/skeleton-loader/page")),
+    title: "Скелетон-загрузчик",
+    description:
+      "Скелетон-плейсхолдеры трех типов: карточка профиля, лента постов и таблица пользователей.",
   },
 } as const;
