@@ -319,6 +319,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(25, 5, 2026),
   },
+  {
+    href: "weather-widget",
+    title: "Виджет погоды",
+    description:
+      "Компактный и ультрасовременный виджет погоды, спроектированный строго для темных интерфейсов.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(26, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -531,5 +540,11 @@ export const dynamicPageMap: Record<
     title: "Скелетон-загрузчик",
     description:
       "Скелетон-плейсхолдеры трех типов: карточка профиля, лента постов и таблица пользователей.",
+  },
+  "weather-widget": {
+    page: dynamic(() => import("@/components/weather-widget/page")),
+    title: "Виджет погоды",
+    description:
+      "Компактный и ультрасовременный виджет погоды, спроектированный строго для темных интерфейсов.",
   },
 } as const;

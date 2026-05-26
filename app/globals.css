@@ -532,3 +532,14 @@
     }
   }
 }
+@theme {
+  --color-ww-bg-primary: #080710;
+  --color-ww-bg-card: #110f1e;
+  --color-ww-border: #1e1b35;
+  --color-ww-text-main: #f8fafc;
+  --color-ww-text-muted: #64748b;
+  --color-ww-accent-glow: #38bdf8;
+  --color-ww-accent-bg: #17152b;
+  --color-ww-success: #10b981;
+  --color-ww-icon: #a5b4fc;
+}

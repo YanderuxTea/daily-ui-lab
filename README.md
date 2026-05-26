@@ -548,3 +548,18 @@
 ![Preview](/public/skeleton-loader.gif)
 
 </details>
+
+### 35. Weather Widget
+
+- **Описание:** Компактный и ультрасовременный виджет погоды, спроектированный строго для темных интерфейсов.
+
+- **Тайминг реализации:** ~30 минут.
+
+- **Путь:** `/weather-widget`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/weather-widget.gif)
+
+</details>
