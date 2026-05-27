@@ -543,3 +543,13 @@
   --color-ww-success: #10b981;
   --color-ww-icon: #a5b4fc;
 }
+@theme {
+  --color-csw-bg-main: #0b0a11;
+  --color-csw-bg-card: #14121f;
+  --color-csw-bg-input: #1c1a2b;
+  --color-csw-border: #262338;
+  --color-csw-border-focus: #6366f1;
+  --color-csw-text-secondary: #8e8a9f;
+  --color-csw-accent: #6366f1;
+  --color-csw-success: #10b981;
+}

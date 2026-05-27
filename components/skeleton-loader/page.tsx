@@ -40,7 +40,7 @@ export default function SLPage() {
   return (
     <main
       className={cn(
-        "flex items-center justify-center p-2.5 w-full min-h-screen bg-sl-bg-base text-sl-text-light",
+        "flex items-center justify-center p-2.5 w-full flex-1 bg-sl-bg-base text-sl-text-light",
         onest.className,
       )}
     >

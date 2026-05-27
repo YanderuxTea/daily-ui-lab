@@ -11,7 +11,7 @@ export default function TSPage() {
   return (
     <main
       className={cn(
-        "flex flex-col gap-5 items-center justify-center p-2.5 min-h-screen w-full bg-ts-dark-2 text-ts-dark-1",
+        "flex flex-col gap-5 items-center justify-center p-2.5 flex-1 w-full bg-ts-dark-2 text-ts-dark-1",
         onest.className,
       )}
     >

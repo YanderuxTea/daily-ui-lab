@@ -6,7 +6,7 @@ export default function MPCPage() {
   return (
     <main
       className={cn(
-        "bg-nc-bg min-h-screen flex items-center justify-center w-full p-2.5",
+        "bg-nc-bg flex-1 flex items-center justify-center w-full p-2.5",
         space_grotesk.className,
       )}
     >

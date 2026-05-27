@@ -4,7 +4,7 @@ import { dm_sans } from "@/lib/font";
 export default function OTPPage() {
   return (
     <main
-      className={`bg-[#0a0a0f] flex items-center justify-center min-h-screen w-full text-white ${dm_sans.className} flex-col gap-6 p-2.5 overflow-clip`}
+      className={`bg-[#0a0a0f] flex items-center justify-center flex-1 w-full text-white ${dm_sans.className} flex-col gap-6 p-2.5 overflow-clip`}
     >
       <p className={"text-[#f1f5f9] text-lg font-medium"}>
         Two-factor authentication

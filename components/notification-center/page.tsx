@@ -4,7 +4,7 @@ import NotificationPanel from "@/components/notification-center/NotificationPane
 export default function NCPage() {
   return (
     <main
-      className={`bg-nc-bg text-nc-text-primary flex min-h-screen w-full ${inter.className} p-2.5`}
+      className={`bg-nc-bg text-nc-text-primary flex flex-1 w-full ${inter.className} p-2.5`}
     >
       <NotificationPanel />
     </main>

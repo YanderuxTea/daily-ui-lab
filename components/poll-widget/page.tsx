@@ -6,7 +6,7 @@ export default function PWPage() {
   return (
     <main
       className={cn(
-        "flex items-center justify-center w-full min-h-screen p-2.5 bg-pw-bg text-pw-text",
+        "flex items-center justify-center w-full flex-1 p-2.5 bg-pw-bg text-pw-text",
         onest.className,
       )}
     >

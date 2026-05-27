@@ -6,7 +6,7 @@ export default function SDCPage() {
   return (
     <main
       className={cn(
-        "min-h-screen w-full flex items-center justify-center p-2.5 bg-sdc-bg",
+        "flex-1 w-full flex items-center justify-center p-2.5 bg-sdc-bg",
         plus_jakarta_sans.className,
       )}
     >

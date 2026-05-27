@@ -62,7 +62,7 @@ export default function GGPage() {
   return (
     <main
       className={cn(
-        "w-full min-h-screen flex justify-center px-2.5 py-5 bg-gg-background text-gg-primary",
+        "w-full flex-1 flex justify-center px-2.5 py-5 bg-gg-background text-gg-primary",
         onest.className,
       )}
     >

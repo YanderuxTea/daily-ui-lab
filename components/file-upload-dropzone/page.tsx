@@ -4,7 +4,7 @@ import DropzoneFullBlock from "@/components/file-upload-dropzone/DropzoneFullBlo
 export default function FUDPage() {
   return (
     <main
-      className={`bg-dz-bg min-h-screen w-full ${inter.className} text-dz-text-primary flex items-center justify-center p-2.5`}
+      className={`bg-dz-bg flex-1 w-full ${inter.className} text-dz-text-primary flex items-center justify-center p-2.5`}
     >
       <DropzoneFullBlock />
     </main>

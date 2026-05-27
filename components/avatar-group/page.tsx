@@ -37,7 +37,7 @@ export default function page() {
   return (
     <main
       className={cn(
-        "flex flex-col items-center justify-center bg-ag-darkest p-2.5 w-full min-h-screen gap-10",
+        "flex flex-col items-center justify-center bg-ag-darkest p-2.5 w-full flex-1 gap-10",
         onest.className,
       )}
     >

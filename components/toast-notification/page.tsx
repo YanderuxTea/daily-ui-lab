@@ -6,7 +6,7 @@ import NotificationContainer from "@/components/toast-notification/NotificationC
 export default function TNPage() {
   return (
     <main
-      className={`bg-[#0a0a0f] min-h-screen w-full flex items-center justify-center ${dm_sans.className}`}
+      className={`bg-[#0a0a0f] flex-1 w-full flex items-center justify-center ${dm_sans.className}`}
     >
       <ToastProvider>
         <ControlToast />

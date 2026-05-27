@@ -53,7 +53,7 @@ export default function DPPage() {
   return (
     <main
       className={cn(
-        "flex px-2.5 py-5 justify-center items-start min-h-screen w-full bg-dp-bg text-dp-text",
+        "flex px-2.5 py-5 justify-center items-start flex-1 w-full bg-dp-bg text-dp-text",
         onest.className,
       )}
     >

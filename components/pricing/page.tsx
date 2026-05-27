@@ -8,7 +8,7 @@ export default function PPage() {
   return (
     <main
       className={cn(
-        "bg-pc-bg min-h-screen w-full p-2.5 flex items-center justify-center flex-col gap-12 text-pc-text-primary",
+        "bg-pc-bg flex-1 w-full p-2.5 flex items-center justify-center flex-col gap-12 text-pc-text-primary",
         manrope.className,
       )}
     >

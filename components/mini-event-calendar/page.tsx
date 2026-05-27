@@ -65,7 +65,7 @@ export default function MECPage() {
   return (
     <main
       className={cn(
-        "flex justify-center min-h-screen w-full bg-mec-black px-2.5 py-5 text-mec-light",
+        "flex justify-center flex-1 w-full bg-mec-black px-2.5 py-5 text-mec-light",
         onest.className,
       )}
     >

@@ -17,7 +17,7 @@ export default function WCPage() {
   return (
     <main
       className={cn(
-        "flex justify-center py-5 px-2.5 min-h-screen w-full bg-wc-bg text-wc-text",
+        "flex justify-center py-5 px-2.5 flex-1 w-full bg-wc-bg text-wc-text",
         golos_text.className,
       )}
     >

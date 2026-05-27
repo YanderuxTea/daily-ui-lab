@@ -34,7 +34,7 @@ export default function CSPPage() {
   return (
     <main
       className={cn(
-        "flex w-full min-h-screen bg-csp-bg text-violet-300 p-2.5 items-center justify-center select-none overflow-clip",
+        "flex w-full flex-1 bg-csp-bg text-violet-300 p-2.5 items-center justify-center select-none overflow-clip",
         onest.className,
       )}
     >

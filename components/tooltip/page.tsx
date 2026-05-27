@@ -11,7 +11,7 @@ export default function TPage() {
   return (
     <main
       className={cn(
-        "min-h-screen w-full flex flex-col gap-10 items-center justify-center p-2.5 bg-t-base text-t-accent",
+        "flex-1 w-full flex flex-col gap-10 items-center justify-center p-2.5 bg-t-base text-t-accent",
         onest.className,
       )}
     >

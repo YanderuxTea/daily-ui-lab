@@ -6,7 +6,7 @@ export default function TBPage() {
   return (
     <main
       className={cn(
-        "flex items-center justify-center p-2.5 w-full min-h-screen bg-kb-bg text-kb-text-primary flex-col gap-3",
+        "flex items-center justify-center p-2.5 w-full flex-1 bg-kb-bg text-kb-text-primary flex-col gap-3",
         onest.className,
       )}
     >

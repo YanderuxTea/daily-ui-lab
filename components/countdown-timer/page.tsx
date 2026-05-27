@@ -13,7 +13,7 @@ export default function CTPage() {
   return (
     <main
       className={cn(
-        "bg-ct-bg min-h-screen w-full flex items-center justify-center p-2.5 flex-col gap-6 text-ct-text",
+        "bg-ct-bg flex-1 w-full flex items-center justify-center p-2.5 flex-col gap-6 text-ct-text",
         space_grotesk.className,
       )}
     >

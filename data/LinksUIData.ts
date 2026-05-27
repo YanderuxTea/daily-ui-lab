@@ -328,6 +328,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS"],
     createdAt: getValidDate(26, 5, 2026),
   },
+  {
+    href: "crypto-swap-widget",
+    title: "Виджет обмена криптовалюты",
+    description:
+      "Компактный и футуристичный интерфейс для быстрого конвертирования цифровых активов. Компонент разделен на два интерактивных блока - продажу и покупку валюты, между которыми находится парящая кнопка реверса.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(27, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -546,5 +555,11 @@ export const dynamicPageMap: Record<
     title: "Виджет погоды",
     description:
       "Компактный и ультрасовременный виджет погоды, спроектированный строго для темных интерфейсов.",
+  },
+  "crypto-swap-widget": {
+    page: dynamic(() => import("@/components/crypto-swap-widget/page")),
+    title: "Виджет обмена криптовалюты",
+    description:
+      "Компактный и футуристичный интерфейс для быстрого конвертирования цифровых активов. Компонент разделен на два интерактивных блока - продажу и покупку валюты, между которыми находится парящая кнопка реверса.",
   },
 } as const;
