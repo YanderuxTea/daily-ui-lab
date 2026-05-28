@@ -578,3 +578,4 @@
 ![Preview](/public/crypto-swap-widget.gif)
 
 </details>
+1
