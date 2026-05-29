@@ -598,4 +598,3 @@
 ![Preview](/public/ai-prompt-input-widget.gif)
 
 </details>
-1
