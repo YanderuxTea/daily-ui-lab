@@ -553,3 +553,17 @@
   --color-csw-accent: #6366f1;
   --color-csw-success: #10b981;
 }
+@theme {
+  --color-ai-bg-main: #09090b;
+  --color-ai-bg-panel: #121214;
+  --color-ai-bg-button: #1a1a1e;
+  --color-ai-border: #27272a;
+  --color-ai-border-focus: #a855f7;
+  --color-ai-text-primary: #fafafa;
+  --color-ai-text-muted: #71717a;
+  --color-ai-accent: #a855f7;
+  --color-ai-accent-glow: rgba(168, 85, 247, 0.2);
+}
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+}

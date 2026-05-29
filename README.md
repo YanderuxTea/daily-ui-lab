@@ -578,4 +578,23 @@
 ![Preview](/public/crypto-swap-widget.gif)
 
 </details>
-1
+
+### 37. AI Prompt Input Widget
+
+- **Описание:** Интерактивный виджет для ввода запросов к ИИ.
+  - Позволяет выбирать готовые подсказки из `promptData` (скрипт, ревью кода, поиск бага).
+  - Переключать модель ИИ (GPT‑4o, Claude 3.5, DeepSeek) через выпадающий список с анимацией Framer Motion.
+  - Вводить запрос в textarea, видеть счётчик символов (до 1000) и отправлять его кнопкой Send.
+  - Поддерживает прикрепление файлов и микрофон (иконки, без реализации).
+  - Стилизация выполнена на Tailwind CSS с кастомными токенами `ai-*` (фон, границы, акценты).
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/ai-prompt-input-widget`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/ai-prompt-input-widget.gif)
+
+</details>

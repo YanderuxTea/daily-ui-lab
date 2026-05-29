@@ -337,6 +337,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(27, 5, 2026),
   },
+  {
+    href: "ai-prompt-input-widget",
+    title: "Интеллектуальное поле ввода для ИИ",
+    description:
+      "Элегантная и функциональная панель ввода, спроектированная специально для интерфейсов чат-ботов и нейросетевых ассистентов.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(29, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -561,5 +570,11 @@ export const dynamicPageMap: Record<
     title: "Виджет обмена криптовалюты",
     description:
       "Компактный и футуристичный интерфейс для быстрого конвертирования цифровых активов. Компонент разделен на два интерактивных блока - продажу и покупку валюты, между которыми находится парящая кнопка реверса.",
+  },
+  "ai-prompt-input-widget": {
+    page: dynamic(() => import("@/components/ai-prompt-input-widget/page")),
+    title: "Интеллектуальное поле ввода для ИИ",
+    description:
+      "Элегантная и функциональная панель ввода, спроектированная специально для интерфейсов чат-ботов и нейросетевых ассистентов.",
   },
 } as const;
