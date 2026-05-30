@@ -567,3 +567,14 @@
 .hide-scrollbar::-webkit-scrollbar {
   width: 0;
 }
+@theme {
+  --color-vcm-bg-main: #060609;
+  --color-vcm-bg-card: #111115;
+  --color-vcm-bg-inner: #171721;
+  --color-vcm-border: #22222f;
+  --color-vcm-text-muted: #717184;
+  --color-vcm-accent: #3b82f6;
+  --color-vcm-danger: #ef4444;
+  --color-vcm-card-start: #1d4ed8;
+  --color-vcm-card-end: #7c3aed;
+}

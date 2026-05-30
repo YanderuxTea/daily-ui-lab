@@ -346,6 +346,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(29, 5, 2026),
   },
+  {
+    href: "virtual-card-manager-widget",
+    title: "Виджет управления виртуальной картой",
+    description:
+      "Минималистичный и безопасный интерфейс для управления цифровой дебетовой картой внутри банковского приложения или криптокошелька.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(30, 5, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -576,5 +585,13 @@ export const dynamicPageMap: Record<
     title: "Интеллектуальное поле ввода для ИИ",
     description:
       "Элегантная и функциональная панель ввода, спроектированная специально для интерфейсов чат-ботов и нейросетевых ассистентов.",
+  },
+  "virtual-card-manager-widget": {
+    page: dynamic(
+      () => import("@/components/virtual-card-manager-widget/page"),
+    ),
+    title: "Виджет управления виртуальной картой",
+    description:
+      "Минималистичный и безопасный интерфейс для управления цифровой дебетовой картой внутри банковского приложения или криптокошелька.",
   },
 } as const;
