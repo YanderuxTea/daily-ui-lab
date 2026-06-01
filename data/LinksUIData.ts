@@ -355,6 +355,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(30, 5, 2026),
   },
+  {
+    href: "audio-voice-note-recorder-widget",
+    title: "Интерактивный виджет записи голосовых сообщений",
+    description:
+      "Премиальный компонент для чатов и интерфейсов обратной связи.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(1, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -593,5 +602,13 @@ export const dynamicPageMap: Record<
     title: "Виджет управления виртуальной картой",
     description:
       "Минималистичный и безопасный интерфейс для управления цифровой дебетовой картой внутри банковского приложения или криптокошелька.",
+  },
+  "audio-voice-note-recorder-widget": {
+    page: dynamic(
+      () => import("@/components/audio-voice-note-recorder-widget/page"),
+    ),
+    title: "Интерактивный виджет записи голосовых сообщений",
+    description:
+      "Премиальный компонент для чатов и интерфейсов обратной связи.",
   },
 } as const;

@@ -578,3 +578,13 @@
   --color-vcm-card-start: #1d4ed8;
   --color-vcm-card-end: #7c3aed;
 }
+@theme {
+  --color-avr-bg-main: #0a0a0c;
+  --color-avr-bg-card: #121216;
+  --color-avr-bg-inner: #1a1a22;
+  --color-avr-border: #262630;
+  --color-avr-text-muted: #71718a;
+  --color-avr-accent: #6366f1;
+  --color-avr-danger: #ef4444;
+  --color-avr-success: #10b981;
+}
