@@ -364,6 +364,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(1, 6, 2026),
   },
+  {
+    href: "cloud-storage-space-tracker",
+    title: "Виджет мониторинга облачного хранилища",
+    description:
+      "Компактный и информативный виджет для отслеживания состояния дискового пространства в облачном сервисе.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(2, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -610,5 +619,13 @@ export const dynamicPageMap: Record<
     title: "Интерактивный виджет записи голосовых сообщений",
     description:
       "Премиальный компонент для чатов и интерфейсов обратной связи.",
+  },
+  "cloud-storage-space-tracker": {
+    page: dynamic(
+      () => import("@/components/cloud-storage-space-tracker/page"),
+    ),
+    title: "Виджет мониторинга облачного хранилища",
+    description:
+      "Компактный и информативный виджет для отслеживания состояния дискового пространства в облачном сервисе.",
   },
 } as const;

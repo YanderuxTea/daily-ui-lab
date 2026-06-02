@@ -588,3 +588,14 @@
   --color-avr-danger: #ef4444;
   --color-avr-success: #10b981;
 }
+@theme {
+  --color-cst-bg-main: #09090b;
+  --color-cst-bg-card: #141417;
+  --color-cst-border: #27272a;
+  --color-cst-text-primary: #fafafa;
+  --color-cst-text-muted: #71717a;
+  --color-cst-media: #ec4899;
+  --color-cst-docs: #3b82f6;
+  --color-cst-other: #10b981;
+  --color-cst-empty: #27272a;
+}
