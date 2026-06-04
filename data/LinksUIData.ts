@@ -373,6 +373,16 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(2, 6, 2026),
   },
+
+  {
+    href: "git-merge-conflict-resolver-widget",
+    title: "Интерактивный виджет разрешения конфликтов Git",
+    description:
+      "Специализированный компонент для UI разработчиков или DevOps-панелей, имитирующий окно разрешения конфликтов в коде (аналог функционала VS Code / WebStorm).",
+    devices: ["pc"],
+    stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(4, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -627,5 +637,13 @@ export const dynamicPageMap: Record<
     title: "Виджет мониторинга облачного хранилища",
     description:
       "Компактный и информативный виджет для отслеживания состояния дискового пространства в облачном сервисе.",
+  },
+  "git-merge-conflict-resolver-widget": {
+    page: dynamic(
+      () => import("@/components/git-merge-conflict-resolver-widget/page"),
+    ),
+    title: "Интерактивный виджет разрешения конфликтов Git",
+    description:
+      "Специализированный компонент для UI разработчиков или DevOps-панелей, имитирующий окно разрешения конфликтов в коде (аналог функционала VS Code / WebStorm).",
   },
 } as const;
