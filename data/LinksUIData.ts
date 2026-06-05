@@ -383,6 +383,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS"],
     createdAt: getValidDate(4, 6, 2026),
   },
+  {
+    href: "active-security-sessions-manager",
+    title: "Виджет управления активными сессиями устройств",
+    description:
+      "Премиальный компонент панели настроек безопасности аккаунта. Отображает список авторизованных устройств с подробной мета-информацией.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(5, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -645,5 +654,13 @@ export const dynamicPageMap: Record<
     title: "Интерактивный виджет разрешения конфликтов Git",
     description:
       "Специализированный компонент для UI разработчиков или DevOps-панелей, имитирующий окно разрешения конфликтов в коде (аналог функционала VS Code / WebStorm).",
+  },
+  "active-security-sessions-manager": {
+    page: dynamic(
+      () => import("@/components/active-security-sessions-manager/page"),
+    ),
+    title: "Виджет управления активными сессиями устройств",
+    description:
+      "Премиальный компонент панели настроек безопасности аккаунта. Отображает список авторизованных устройств с подробной мета-информацией.",
   },
 } as const;

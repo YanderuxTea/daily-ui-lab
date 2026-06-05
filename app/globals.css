@@ -610,3 +610,12 @@
   --color-gcr-incoming-bg: rgba(76, 29, 149, 0.25);
   --color-gcr-incoming-border: #8b5cf6;
 }
+@theme {
+  --color-asm-bg-main: #09090b;
+  --color-asm-bg-card: #141417;
+  --color-asm-border: #27272a;
+  --color-asm-text-primary: #fafafa;
+  --color-asm-text-muted: #71717a;
+  --color-asm-success: #10b981;
+  --color-asm-danger: #ef4444;
+}
