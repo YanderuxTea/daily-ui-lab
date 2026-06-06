@@ -619,3 +619,20 @@
   --color-asm-success: #10b981;
   --color-asm-danger: #ef4444;
 }
+@theme {
+  --color-swc-bg: #09090b;
+  --color-swc-card: #18181b;
+  --color-swc-track: #141417;
+  --color-swc-border: #27272a;
+  --color-swc-hint: #3f3f46;
+  --color-swc-text: #fafafa;
+  --color-swc-muted: #71717a;
+  --color-swc-primary: #3b82f6;
+  --color-swc-primary-fill: #1e3a5f;
+  --color-swc-danger: #ef4444;
+  --color-swc-danger-fill: #450a0a;
+  --color-swc-warning: #f59e0b;
+  --color-swc-warning-fill: #451a03;
+  --color-swc-success: #10b981;
+  --color-swc-success-fill: #052e16;
+}

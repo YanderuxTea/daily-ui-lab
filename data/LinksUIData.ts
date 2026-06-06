@@ -392,6 +392,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(5, 6, 2026),
   },
+  {
+    href: "swipe-to-confirm",
+    title: "Свайп-подтверждение",
+    description:
+      "Компонент подтверждения критических действий через перетаскивание ползунка.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(6, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -662,5 +671,11 @@ export const dynamicPageMap: Record<
     title: "Виджет управления активными сессиями устройств",
     description:
       "Премиальный компонент панели настроек безопасности аккаунта. Отображает список авторизованных устройств с подробной мета-информацией.",
+  },
+  "swipe-to-confirm": {
+    page: dynamic(() => import("@/components/swipe-to-confirm/page")),
+    title: "Свайп-подтверждение",
+    description:
+      "Компонент подтверждения критических действий через перетаскивание ползунка.",
   },
 } as const;
