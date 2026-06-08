@@ -401,6 +401,16 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(6, 6, 2026),
   },
+
+  {
+    href: "number-stepper-input",
+    title: "Числовой степпер",
+    description:
+      "омпонент инкремента/декремента числового значения с анимацией смены цифры.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(8, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -677,5 +687,11 @@ export const dynamicPageMap: Record<
     title: "Свайп-подтверждение",
     description:
       "Компонент подтверждения критических действий через перетаскивание ползунка.",
+  },
+  "number-stepper-input": {
+    page: dynamic(() => import("@/components/number-stepper-input/page")),
+    title: "Числовой степпер",
+    description:
+      "омпонент инкремента/декремента числового значения с анимацией смены цифры.",
   },
 } as const;

@@ -636,3 +636,14 @@
   --color-swc-success: #10b981;
   --color-swc-success-fill: #052e16;
 }
+@theme {
+  --color-nsi-bg: #09090b;
+  --color-nsi-card: #18181b;
+  --color-nsi-field: #141417;
+  --color-nsi-border: #27272a;
+  --color-nsi-text: #fafafa;
+  --color-nsi-muted: #71717a;
+  --color-nsi-hint: #3f3f46;
+  --color-nsi-btn-hover: #3f3f46;
+  --color-nsi-accent: #6366f1;
+}
