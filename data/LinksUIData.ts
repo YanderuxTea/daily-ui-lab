@@ -406,7 +406,7 @@ export const linksUIData = [
     href: "number-stepper-input",
     title: "Числовой степпер",
     description:
-      "омпонент инкремента/декремента числового значения с анимацией смены цифры.",
+      "Компонент инкремента/декремента числового значения с анимацией смены цифры.",
     devices: ["pc", "mobile"],
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(8, 6, 2026),
@@ -701,7 +701,7 @@ export const dynamicPageMap: Record<
     page: dynamic(() => import("@/components/number-stepper-input/page")),
     title: "Числовой степпер",
     description:
-      "омпонент инкремента/декремента числового значения с анимацией смены цифры.",
+      "Компонент инкремента/декремента числового значения с анимацией смены цифры.",
   },
   "flip-card": {
     page: dynamic(() => import("@/components/flip-card/page")),
