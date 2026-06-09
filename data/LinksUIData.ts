@@ -411,6 +411,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(8, 6, 2026),
   },
+
+  {
+    href: "flip-card",
+    title: "Карточка с переворотом",
+    description: "3D-карточка с переворотом по клику.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(9, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -693,5 +702,10 @@ export const dynamicPageMap: Record<
     title: "Числовой степпер",
     description:
       "омпонент инкремента/декремента числового значения с анимацией смены цифры.",
+  },
+  "flip-card": {
+    page: dynamic(() => import("@/components/flip-card/page")),
+    title: "Карточка с переворотом",
+    description: "3D-карточка с переворотом по клику.",
   },
 } as const;

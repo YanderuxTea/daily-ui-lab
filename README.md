@@ -752,3 +752,35 @@
 ![Preview](/public/number-stepper-input.gif)
 
 </details>
+
+### 45. Flip‑Card Widget
+
+- **Описание:** Интерактивный карточный компонент с 3‑D анимацией «переворота».
+  - При клике карточка вращается по оси Y на 180° (flip).
+  - **Лицевая сторона** показывает иконку, заголовок, короткое описание и подсказку «Нажми чтобы узнать».
+  - **Обратная сторона** раскрывает список ключевых навыков и кнопку «Посмотреть работы».
+  - Анимация реализована через **Framer Motion** (`motion.div` с `rotateY` и spring‑транзакцией).
+  - Стилизация выполнена на **Tailwind CSS** с кастомными токенами `fc-*` (фон, границы, цвета текста, иконок).
+
+- **Данные:**
+  - Описаны в `data/flip-card/flipCardData.ts`.
+  - Три набора данных:
+    1. **Frontend** – иконка `Atom`, список технологий (React, TypeScript, Tailwind, Framer Motion).
+    2. **Backend** – иконка `Server`, список (NestJS, PostgreSQL, Prisma, Redis/Socket.io).
+    3. **DevOps** – иконка `Package`, список (Docker, GitHub Actions, Nginx, Linux/SSH).
+  - Каждый набор содержит стили для иконки, списка и кнопки (`classnameIcon`, `classnameList`, `classnameButton`).
+
+- **Компоненты:**
+  - `components/flip-card/Card.tsx` – отдельная карточка, управляет состоянием `flipped` и рендерит обе стороны.
+  - `components/flip-card/page.tsx` – страница‑обёртка, выводит три карточки в сетке.
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/flip-card`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/flip-card.gif)
+
+</details>

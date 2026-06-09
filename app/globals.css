@@ -647,3 +647,18 @@
   --color-nsi-btn-hover: #3f3f46;
   --color-nsi-accent: #6366f1;
 }
+@theme {
+  --color-fc-bg: #09090b;
+  --color-fc-card: #18181b;
+  --color-fc-border: rgba(255, 255, 255, 0.08);
+  --color-fc-text: #fafafa;
+  --color-fc-muted: #a1a1aa;
+  --color-fc-hint: #52525b;
+  --color-fc-violet: #8b5cf6;
+  --color-fc-violet-dim: rgba(139, 92, 246, 0.12);
+  --color-fc-cyan: #06b6d4;
+  --color-fc-cyan-dim: rgba(6, 182, 212, 0.12);
+  --color-fc-amber: #f59e0b;
+  --color-fc-amber-dim: rgba(245, 158, 11, 0.12);
+  --color-fc-amber-on: #1c1917;
+}
