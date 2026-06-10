@@ -411,7 +411,6 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(8, 6, 2026),
   },
-
   {
     href: "flip-card",
     title: "Карточка с переворотом",
@@ -419,6 +418,14 @@ export const linksUIData = [
     devices: ["pc", "mobile"],
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(9, 6, 2026),
+  },
+  {
+    href: "tilt-card",
+    title: "Карточка с наклоном",
+    description: "3D-наклон карточки за курсором.",
+    devices: ["pc"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(10, 6, 2026),
   },
 ] as const satisfies readonly LinkItem[];
 
@@ -707,5 +714,10 @@ export const dynamicPageMap: Record<
     page: dynamic(() => import("@/components/flip-card/page")),
     title: "Карточка с переворотом",
     description: "3D-карточка с переворотом по клику.",
+  },
+  "tilt-card": {
+    page: dynamic(() => import("@/components/tilt-card/page")),
+    title: "Карточка с наклоном",
+    description: "3D-наклон карточки за курсором.",
   },
 } as const;

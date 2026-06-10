@@ -784,3 +784,33 @@
 ![Preview](/public/flip-card.gif)
 
 </details>
+
+### 46. Tilt‑Card Widget
+
+- **Описание:** Интерактивная карточка с 3‑D эффектом наклона, реагирующая на движение мыши.
+  - При перемещении курсора вычисляются относительные координаты `x` и `y`, которые через `framer‑motion`‑события `useMotionValue`, `useSpring` и `useTransform` преобразуются в плавные углы `rotateX` и `rotateY`.
+  - На лицевой стороне отображается иконка (из `iconsTiltCard`), заголовок, короткое описание и тег‑лейбл.
+  - Стилизация выполнена на **Tailwind CSS** с кастомными токенами `tc-*` (фон, границы, цвета текста, тени).
+  - Компонент полностью типизирован TypeScript (`TiltCardData`).
+
+- **Данные:**
+  - Описаны в `data/tilt-card/tiltCardData.ts`.
+  - Три варианта карточек:
+    1. **Быстрый деплой** – иконка `Rocket`, тег `CI/CD`, стили `bg-tc-violet-dim text-tc-violet`.
+    2. **Аналитика** – иконка `ChartLine`, тег `Real‑Time`, стили `bg-tc-blue-dim text-tc-blue`.
+    3. **Безопасность** – иконка `ShieldCheck`, тег `E2E`, стили `bg-tc-green-dim text-tc-green`.
+
+- **Компоненты:**
+  - `components/tilt-card/Card.tsx` – реализует логику наклона и рендерит содержимое карточки.
+  - `components/tilt-card/page.tsx` – страница‑обёртка, выводит все три карточки в адаптивном контейнере.
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/tilt-card`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/tilt-card.gif)
+
+</details>

@@ -662,3 +662,17 @@
   --color-fc-amber-dim: rgba(245, 158, 11, 0.12);
   --color-fc-amber-on: #1c1917;
 }
+@theme {
+  --color-tc-bg: #09090b;
+  --color-tc-card: #18181b;
+  --color-tc-border: rgba(255, 255, 255, 0.08);
+  --color-tc-text: #fafafa;
+  --color-tc-muted: #a1a1aa;
+  --color-tc-hint: #52525b;
+  --color-tc-violet: #8b5cf6;
+  --color-tc-violet-dim: rgba(139, 92, 246, 0.12);
+  --color-tc-blue: #3b82f6;
+  --color-tc-blue-dim: rgba(59, 130, 246, 0.12);
+  --color-tc-green: #10b981;
+  --color-tc-green-dim: rgba(16, 185, 129, 0.12);
+}
