@@ -423,7 +423,7 @@ export const linksUIData = [
     href: "tilt-card",
     title: "Карточка с наклоном",
     description: "3D-наклон карточки за курсором.",
-    devices: ["pc"],
+    devices: ["pc", "mobile"],
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(10, 6, 2026),
   },
