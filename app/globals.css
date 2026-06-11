@@ -676,3 +676,17 @@
   --color-tc-green: #10b981;
   --color-tc-green-dim: rgba(16, 185, 129, 0.12);
 }
+@theme {
+  --color-et-bg: #09090b;
+  --color-et-card: #18181b;
+  --color-et-border: rgba(255, 255, 255, 0.08);
+  --color-et-text: #fafafa;
+  --color-et-muted: #a1a1aa;
+  --color-et-hint: #52525b;
+  --color-et-violet: #8b5cf6;
+  --color-et-violet-dim: rgba(139, 92, 246, 0.12);
+  --color-et-blue: #3b82f6;
+  --color-et-blue-dim: rgba(59, 130, 246, 0.12);
+  --color-et-amber: #f59e0b;
+  --color-et-amber-dim: rgba(245, 158, 11, 0.12);
+}

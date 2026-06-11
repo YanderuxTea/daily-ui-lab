@@ -17,7 +17,7 @@ export default function Widget({ props }: { props: StepperData }) {
   }>({ val: min, direct: 1 });
   const variants = {
     enter: (direction: number) => ({ y: 4 * direction, opacity: 0 }),
-    center: (direction: number) => ({ y: 0, opacity: 1 }),
+    center: () => ({ y: 0, opacity: 1 }),
     exit: (direction: number) => ({ y: 4 * -direction, opacity: 0 }),
   };
   return (

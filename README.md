@@ -814,3 +814,33 @@
 ![Preview](/public/tilt-card.gif)
 
 </details>
+
+### 47. Expandable‑Text Widget
+
+- **Описание:** Интерактивный блок с заголовком, тегом‑лейблом и скрываемым/раскрываемым текстовым описанием.
+  - По умолчанию высота блока ограничена `height` (передаётся из родительского компонента).
+  - При клике на кнопку «Показать больше»/«Свернуть» высота плавно меняется от фиксированного значения к `auto` благодаря **Framer Motion** (`layout`, `initial`, `animate`).
+  - Иконка‑стрелка (`ChevronDown`) вращается на 180° при открытии.
+  - Стилизация выполнена на **Tailwind CSS** с кастомными токенами `et-*` (фон, границы, цвета текста, тега).
+
+- **Данные:**
+  - Описаны в `data/expandable-text/expandableTextData.ts`.
+  - Три примера:
+    1. **TypeScript** – `title: "Зачем использовать TypeScript"`, `tag: "TypeScript"`, стили `bg-et-violet-dim text-et-violet`.
+    2. **Next.js** – `title: "Next.js App Router"`, `tag: "Next.js"`, стили `bg-et-blue-dim text-et-blue`.
+    3. **Docker** – `title: "Docker для Node.js проектов"`, `tag: "Docker"`, стили `bg-et-amber-dim text-et-amber`.
+
+- **Компоненты:**
+  - `components/expandable-text/Widget.tsx` – реализует сам блок, управляет состоянием `isOpen`.
+  - `components/expandable-text/page.tsx` – страница‑обёртка, рендерит список `Widget`‑ов, задавая высоту‑ограничитель (например, `height={80}`).
+
+- **Тайминг реализации:** ~30 минут.
+
+- **Путь:** `/expandable-text`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/expandable-text.gif)
+
+</details>

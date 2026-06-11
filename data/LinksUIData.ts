@@ -427,6 +427,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(10, 6, 2026),
   },
+  {
+    href: "expandable-text",
+    title: "Раскрываемый текст",
+    description:
+      "Специализированный UI-компонент для интерфейсов разработчиков и технических панелей, реализующий раскрывающиеся текстовые блоки с плавной анимацией высоты.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS", "Framer"],
+    createdAt: getValidDate(11, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -719,5 +728,11 @@ export const dynamicPageMap: Record<
     page: dynamic(() => import("@/components/tilt-card/page")),
     title: "Карточка с наклоном",
     description: "3D-наклон карточки за курсором.",
+  },
+  "expandable-text": {
+    page: dynamic(() => import("@/components/expandable-text/page")),
+    title: "Раскрываемый текст",
+    description:
+      "Специализированный UI-компонент для интерфейсов разработчиков и технических панелей, реализующий раскрывающиеся текстовые блоки с плавной анимацией высоты.",
   },
 } as const;
