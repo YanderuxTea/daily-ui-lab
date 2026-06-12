@@ -844,3 +844,34 @@
 ![Preview](/public/expandable-text.gif)
 
 </details>
+
+### 48. Code‑Snippet‑Block Widget
+
+- **Описание:** Интерактивный блок, отображающий фрагмент кода с заголовком, тегом‑лейблом и иконкой.
+  - В шапке (`CardHeader`) показывается иконка из `iconsCodeSnippet`, название файла и цветной тег (TypeScript, Bash, JSON).
+  - Сам код выводится в `<pre><code>` с шрифтом **JetBrains Mono** (`jetbrains_mono`) и стилизацией `text-csb-code`.
+  - Стилизация выполнена на **Tailwind CSS** с кастомными токенами `csb-*` (фон, границы, цвета тегов, фон кода).
+  - Компонент полностью типизирован TypeScript (`CodeSnippetData`).
+
+- **Данные:**
+  - Описаны в `data/code-snippet-block/codeSnippetData.ts`.
+  - Три примера:
+    1. **TypeScript** – `title: "useLocalStorage.ts"`, `tag: "TypeScript"`, стили `bg-csb-ts-dim text-csb-ts`.
+    2. **Bash** – `title: "deploy.sh"`, `tag: "Bash"`, стили `bg-csb-bash-dim text-csb-bash`.
+    3. **JSON** – `title: "package.json"`, `tag: "JSON"`, стили `bg-csb-json-dim text-csb-json`.
+
+- **Компоненты:**
+  - `components/code-snippet-block/Card.tsx` – основной контейнер, импортирует `CardHeader` и выводит код.
+  - `components/code-snippet-block/CardHeader.tsx` – шапка с иконкой, тегом и заголовком.
+  - `components/code-snippet-block/page.tsx` – страница‑обёртка, рендерит список `Card`‑ов (TS, Bash, JSON).
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/code-snippet-block`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/code-snippet-block.gif)
+
+</details>

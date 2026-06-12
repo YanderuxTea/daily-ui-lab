@@ -690,3 +690,20 @@
   --color-et-amber: #f59e0b;
   --color-et-amber-dim: rgba(245, 158, 11, 0.12);
 }
+@theme {
+  --color-csb-bg: #09090b;
+  --color-csb-block: #18181b;
+  --color-csb-header: #141417;
+  --color-csb-border: rgba(255, 255, 255, 0.08);
+  --color-csb-code: #d4d4d4;
+  --color-csb-text: #fafafa;
+  --color-csb-muted: #a1a1aa;
+  --color-csb-hint: #52525b;
+  --color-csb-success: #10b981;
+  --color-csb-ts: #3b82f6;
+  --color-csb-ts-dim: rgba(59, 130, 246, 0.12);
+  --color-csb-bash: #10b981;
+  --color-csb-bash-dim: rgba(16, 185, 129, 0.12);
+  --color-csb-json: #f59e0b;
+  --color-csb-json-dim: rgba(245, 158, 11, 0.12);
+}

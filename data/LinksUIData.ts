@@ -436,6 +436,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS", "Framer"],
     createdAt: getValidDate(11, 6, 2026),
   },
+  {
+    href: "code-snippet-block",
+    title: "Блок кода",
+    description:
+      "Специализированный UI-компонент для технических интерфейсов и документационных порталов, реализующий отображение кода с анимированной кнопкой копирования в буфер обмена.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(12, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -734,5 +743,11 @@ export const dynamicPageMap: Record<
     title: "Раскрываемый текст",
     description:
       "Специализированный UI-компонент для интерфейсов разработчиков и технических панелей, реализующий раскрывающиеся текстовые блоки с плавной анимацией высоты.",
+  },
+  "code-snippet-block": {
+    page: dynamic(() => import("@/components/code-snippet-block/page")),
+    title: "Блок кода",
+    description:
+      "Специализированный UI-компонент для технических интерфейсов и документационных порталов, реализующий отображение кода с анимированной кнопкой копирования в буфер обмена.",
   },
 } as const;
