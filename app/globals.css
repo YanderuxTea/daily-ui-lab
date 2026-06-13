@@ -707,3 +707,20 @@
   --color-csb-json: #f59e0b;
   --color-csb-json-dim: rgba(245, 158, 11, 0.12);
 }
+@theme {
+  --color-asc-bg: #09090b;
+  --color-asc-card: #18181b;
+  --color-asc-border: rgba(255, 255, 255, 0.08);
+  --color-asc-text: #fafafa;
+  --color-asc-muted: #a1a1aa;
+  --color-asc-hint: #52525b;
+  --color-asc-delta: #10b981;
+  --color-asc-violet: #8b5cf6;
+  --color-asc-violet-dim: rgba(139, 92, 246, 0.12);
+  --color-asc-blue: #3b82f6;
+  --color-asc-blue-dim: rgba(59, 130, 246, 0.12);
+  --color-asc-green: #10b981;
+  --color-asc-green-dim: rgba(16, 185, 129, 0.12);
+  --color-asc-amber: #f59e0b;
+  --color-asc-amber-dim: rgba(245, 158, 11, 0.12);
+}

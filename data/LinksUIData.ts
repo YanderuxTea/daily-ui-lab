@@ -445,6 +445,15 @@ export const linksUIData = [
     stack: ["Next.js", "Tailwind CSS"],
     createdAt: getValidDate(12, 6, 2026),
   },
+  {
+    href: "animated-stat-counter",
+    title: "Анимированный счётчик метрик",
+    description:
+      "Специализированный UI-компонент для дашбордов и лендингов, реализующий плавную анимацию числовых метрик от нуля до целевого значения.",
+    devices: ["pc", "mobile"],
+    stack: ["Next.js", "Tailwind CSS"],
+    createdAt: getValidDate(13, 6, 2026),
+  },
 ] as const satisfies readonly LinkItem[];
 
 export type PageId = (typeof linksUIData)[number]["href"];
@@ -749,5 +758,11 @@ export const dynamicPageMap: Record<
     title: "Блок кода",
     description:
       "Специализированный UI-компонент для технических интерфейсов и документационных порталов, реализующий отображение кода с анимированной кнопкой копирования в буфер обмена.",
+  },
+  "animated-stat-counter": {
+    page: dynamic(() => import("@/components/animated-stat-counter/page")),
+    title: "Анимированный счётчик метрик",
+    description:
+      "Специализированный UI-компонент для дашбордов и лендингов, реализующий плавную анимацию числовых метрик от нуля до целевого значения.",
   },
 } as const;

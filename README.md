@@ -875,3 +875,35 @@
 ![Preview](/public/code-snippet-block.gif)
 
 </details>
+
+### 49. Animated‑Stat‑Counter Widget
+
+- **Описание:** Интерактивный блок со счётчиком, анимирующим числовое значение при появлении в зоне видимости.
+  - При скролле в область видимости (`IntersectionObserver`) запускается плавная анимация изменения числа от 0 до `targetValue` за указанный `duration` (мс).
+  - Поддерживает дробные значения: количество знаков после запятой определяется автоматически из `targetValue`.
+  - В шапке отображается иконка (из `iconsStatData`), а рядом — динамический индикатор изменения (`delta`) с цветом, задаваемым `classnameDelta`.
+  - Текстовое описание (`description`) выводится под числом.
+  - Стилизация выполнена на **Tailwind CSS** с кастомными токенами `asc-*` (фон, границы, цвета текста, иконок).
+
+- **Данные:**
+  - Описаны в `data/animated-stat-counter/statCounterData.ts`.
+  - Четыре примера:
+    1. **Projects** – `icon: "Folder"`, `targetValue: 1247`, `delta: "+12%"`, стили `bg-asc-violet-dim text-asc-violet`.
+    2. **Users** – `icon: "Users"`, `targetValue: 48392`, `delta: "+28%"`, стили `bg-asc-blue-dim text-asc-blue`.
+    3. **Revenue** – `icon: "CircleDollarSign"`, `targetValue: 284500`, `delta: "+7%"`, `lastChar: " ₽"`, стили `bg-asc-green-dim text-asc-green`.
+    4. **Uptime** – `icon: "Activity"`, `targetValue: 99.9`, `delta: "стабильно"`, `lastChar: "%"`, стили `bg-asc-amber-dim text-asc-amber`.
+
+- **Компоненты:**
+  - `components/animated-stat-counter/Card.tsx` – реализует анимацию, наблюдатель и рендер отдельного счётчика.
+  - `components/animated-stat-counter/page.tsx` – страница‑обёртка, выводит набор `Card`‑ов (проект, пользователи, выручка, аптайм) с одинаковыми параметрами `duration={1500}`.
+
+- **Тайминг реализации:** ~1 час.
+
+- **Путь:** `/animated-stat-counter`
+
+<details>
+<summary style="font-weight: bold">Превью</summary>
+
+![Preview](/public/animated-stat-counter.gif)
+
+</details>
